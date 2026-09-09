@@ -1,0 +1,80 @@
+erDiagram
+    USERS {
+        int user_id PK
+        string name
+        string email UK
+        string password_hash
+        string role
+        timestamp created_at
+    }
+
+    VENUES {
+        int venue_id PK
+        string name
+        string address
+        string city
+        int total_capacity
+    }
+
+    SEATS {
+        int seat_id PK
+        int venue_id FK
+        string seat_row
+        string seat_number
+        string seat_tier
+    }
+
+    EVENTS {
+        int event_id PK
+        int venue_id FK
+        string title
+        date event_date
+        time start_time
+        string status
+        timestamp created_at
+    }
+
+    EVENT_SEATS {
+        int event_seat_id PK
+        int event_id FK
+        int seat_id FK
+        decimal price
+        string status
+        int version
+        timestamp held_until
+    }
+
+    BOOKINGS {
+        int booking_id PK
+        int user_id FK
+        int event_id FK
+        string status
+        decimal total_amount
+        timestamp created_at
+        timestamp confirmed_at
+    }
+
+    BOOKING_SEATS {
+        int booking_seat_id PK
+        int booking_id FK
+        int event_seat_id FK
+    }
+
+    PAYMENTS {
+        int payment_id PK
+        int booking_id FK
+        decimal amount
+        string payment_method
+        string status
+        timestamp paid_at
+    }
+
+    VENUES ||--o{ SEATS : "contains"
+    VENUES ||--o{ EVENTS : "hosts"
+    EVENTS ||--o{ EVENT_SEATS : "has"
+    SEATS ||--o{ EVENT_SEATS : "instance of"
+    USERS ||--o{ BOOKINGS : "makes"
+    EVENTS ||--o{ BOOKINGS : "booked for"
+    BOOKINGS ||--o{ BOOKING_SEATS : "includes"
+    EVENT_SEATS ||--o{ BOOKING_SEATS : "reserved via"
+    BOOKINGS ||--o| PAYMENTS : "paid by"

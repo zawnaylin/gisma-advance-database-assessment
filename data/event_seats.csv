@@ -1,0 +1,368 @@
+venue_name,event_title,seat_row,seat_number,price
+Waterfront Arena,Autumn Jazz Night,A,1,150.00
+Waterfront Arena,Autumn Jazz Night,A,2,150.00
+Waterfront Arena,Autumn Jazz Night,B,1,80.00
+Waterfront Arena,Autumn Jazz Night,B,2,80.00
+Old Town Hall,Chamber Orchestra Evening,A,1,120.00
+Old Town Hall,Chamber Orchestra Evening,B,1,65.00
+Riverside Theatre,Shakespeare Revisited,A,1,95.00
+Riverside Theatre,Shakespeare Revisited,B,1,55.00
+Liberty Pavilion,Broadway Night,A,1,180.00
+Sunset Bowl,Summer Sunset Sessions,A,1,140.00
+Tokyo Grand Hall,Samba Sunset Festival,A,1,170.00
+Tokyo Grand Hall,Samba Sunset Festival,A,2,170.00
+Tokyo Grand Hall,Samba Sunset Festival,B,1,90.00
+Tokyo Grand Hall,Samba Sunset Festival,B,2,90.00
+Tokyo Grand Hall,Samba Sunset Festival,B,3,90.00
+Tokyo Grand Hall,Samba Sunset Festival,B,4,90.00
+Tokyo Grand Hall,Samba Sunset Festival,C,1,45.00
+Tokyo Grand Hall,Samba Sunset Festival,C,2,45.00
+Tokyo Grand Hall,Samba Sunset Festival,C,3,45.00
+Tokyo Grand Hall,Samba Sunset Festival,C,4,45.00
+Tokyo Grand Hall,Mumbai Unplugged,A,1,170.00
+Tokyo Grand Hall,Mumbai Unplugged,A,2,170.00
+Tokyo Grand Hall,Mumbai Unplugged,B,1,90.00
+Tokyo Grand Hall,Mumbai Unplugged,B,2,90.00
+Tokyo Grand Hall,Mumbai Unplugged,B,3,90.00
+Tokyo Grand Hall,Mumbai Unplugged,B,4,90.00
+Tokyo Grand Hall,Mumbai Unplugged,C,1,45.00
+Tokyo Grand Hall,Mumbai Unplugged,C,2,45.00
+Tokyo Grand Hall,Mumbai Unplugged,C,3,45.00
+Tokyo Grand Hall,Mumbai Unplugged,C,4,45.00
+Tokyo Grand Hall,Jazz sous les Etoiles,A,1,170.00
+Tokyo Grand Hall,Jazz sous les Etoiles,A,2,170.00
+Tokyo Grand Hall,Jazz sous les Etoiles,B,1,90.00
+Tokyo Grand Hall,Jazz sous les Etoiles,B,2,90.00
+Tokyo Grand Hall,Jazz sous les Etoiles,B,3,90.00
+Tokyo Grand Hall,Jazz sous les Etoiles,B,4,90.00
+Tokyo Grand Hall,Jazz sous les Etoiles,C,1,45.00
+Tokyo Grand Hall,Jazz sous les Etoiles,C,2,45.00
+Tokyo Grand Hall,Jazz sous les Etoiles,C,3,45.00
+Tokyo Grand Hall,Jazz sous les Etoiles,C,4,45.00
+Tokyo Grand Hall,Cape Sunset Serenade,A,1,170.00
+Tokyo Grand Hall,Cape Sunset Serenade,A,2,170.00
+Tokyo Grand Hall,Cape Sunset Serenade,B,1,90.00
+Tokyo Grand Hall,Cape Sunset Serenade,B,2,90.00
+Tokyo Grand Hall,Cape Sunset Serenade,B,3,90.00
+Tokyo Grand Hall,Cape Sunset Serenade,B,4,90.00
+Tokyo Grand Hall,Cape Sunset Serenade,C,1,45.00
+Tokyo Grand Hall,Cape Sunset Serenade,C,2,45.00
+Tokyo Grand Hall,Cape Sunset Serenade,C,3,45.00
+Tokyo Grand Hall,Cape Sunset Serenade,C,4,45.00
+Paris Opera Court,Harbourfront Big Band,A,1,170.00
+Paris Opera Court,Harbourfront Big Band,A,2,170.00
+Paris Opera Court,Harbourfront Big Band,B,1,90.00
+Paris Opera Court,Harbourfront Big Band,B,2,90.00
+Paris Opera Court,Harbourfront Big Band,B,3,90.00
+Paris Opera Court,Harbourfront Big Band,B,4,90.00
+Paris Opera Court,Harbourfront Big Band,C,1,45.00
+Paris Opera Court,Harbourfront Big Band,C,2,45.00
+Paris Opera Court,Harbourfront Big Band,C,3,45.00
+Paris Opera Court,Harbourfront Big Band,C,4,45.00
+Paris Opera Court,Parisian Cabaret Night,A,1,170.00
+Paris Opera Court,Parisian Cabaret Night,A,2,170.00
+Paris Opera Court,Parisian Cabaret Night,B,1,90.00
+Paris Opera Court,Parisian Cabaret Night,B,2,90.00
+Paris Opera Court,Parisian Cabaret Night,B,3,90.00
+Paris Opera Court,Parisian Cabaret Night,B,4,90.00
+Paris Opera Court,Parisian Cabaret Night,C,1,45.00
+Paris Opera Court,Parisian Cabaret Night,C,2,45.00
+Paris Opera Court,Parisian Cabaret Night,C,3,45.00
+Paris Opera Court,Parisian Cabaret Night,C,4,45.00
+Paris Opera Court,Southern Skies Concert,A,1,170.00
+Paris Opera Court,Southern Skies Concert,A,2,170.00
+Paris Opera Court,Southern Skies Concert,B,1,90.00
+Paris Opera Court,Southern Skies Concert,B,2,90.00
+Paris Opera Court,Southern Skies Concert,B,3,90.00
+Paris Opera Court,Southern Skies Concert,B,4,90.00
+Paris Opera Court,Southern Skies Concert,C,1,45.00
+Paris Opera Court,Southern Skies Concert,C,2,45.00
+Paris Opera Court,Southern Skies Concert,C,3,45.00
+Paris Opera Court,Southern Skies Concert,C,4,45.00
+Paris Opera Court,Bossa Nova Night,A,1,170.00
+Paris Opera Court,Bossa Nova Night,A,2,170.00
+Paris Opera Court,Bossa Nova Night,B,1,90.00
+Paris Opera Court,Bossa Nova Night,B,2,90.00
+Paris Opera Court,Bossa Nova Night,B,3,90.00
+Paris Opera Court,Bossa Nova Night,B,4,90.00
+Paris Opera Court,Bossa Nova Night,C,1,45.00
+Paris Opera Court,Bossa Nova Night,C,2,45.00
+Paris Opera Court,Bossa Nova Night,C,3,45.00
+Paris Opera Court,Bossa Nova Night,C,4,45.00
+Toronto Ice Dome,La Boheme Revival,A,1,170.00
+Toronto Ice Dome,La Boheme Revival,A,2,170.00
+Toronto Ice Dome,La Boheme Revival,B,1,90.00
+Toronto Ice Dome,La Boheme Revival,B,2,90.00
+Toronto Ice Dome,La Boheme Revival,B,3,90.00
+Toronto Ice Dome,La Boheme Revival,B,4,90.00
+Toronto Ice Dome,La Boheme Revival,C,1,45.00
+Toronto Ice Dome,La Boheme Revival,C,2,45.00
+Toronto Ice Dome,La Boheme Revival,C,3,45.00
+Toronto Ice Dome,La Boheme Revival,C,4,45.00
+Toronto Ice Dome,Arabian Nights Gala,A,1,170.00
+Toronto Ice Dome,Arabian Nights Gala,A,2,170.00
+Toronto Ice Dome,Arabian Nights Gala,B,1,90.00
+Toronto Ice Dome,Arabian Nights Gala,B,2,90.00
+Toronto Ice Dome,Arabian Nights Gala,B,3,90.00
+Toronto Ice Dome,Arabian Nights Gala,B,4,90.00
+Toronto Ice Dome,Arabian Nights Gala,C,1,45.00
+Toronto Ice Dome,Arabian Nights Gala,C,2,45.00
+Toronto Ice Dome,Arabian Nights Gala,C,3,45.00
+Toronto Ice Dome,Arabian Nights Gala,C,4,45.00
+Toronto Ice Dome,Neon Nights Concert,A,1,170.00
+Toronto Ice Dome,Neon Nights Concert,A,2,170.00
+Toronto Ice Dome,Neon Nights Concert,B,1,90.00
+Toronto Ice Dome,Neon Nights Concert,B,2,90.00
+Toronto Ice Dome,Neon Nights Concert,B,3,90.00
+Toronto Ice Dome,Neon Nights Concert,B,4,90.00
+Toronto Ice Dome,Neon Nights Concert,C,1,45.00
+Toronto Ice Dome,Neon Nights Concert,C,2,45.00
+Toronto Ice Dome,Neon Nights Concert,C,3,45.00
+Toronto Ice Dome,Neon Nights Concert,C,4,45.00
+Toronto Ice Dome,Waterfront Soul Night,A,1,170.00
+Toronto Ice Dome,Waterfront Soul Night,A,2,170.00
+Toronto Ice Dome,Waterfront Soul Night,B,1,90.00
+Toronto Ice Dome,Waterfront Soul Night,B,2,90.00
+Toronto Ice Dome,Waterfront Soul Night,B,3,90.00
+Toronto Ice Dome,Waterfront Soul Night,B,4,90.00
+Toronto Ice Dome,Waterfront Soul Night,C,1,45.00
+Toronto Ice Dome,Waterfront Soul Night,C,2,45.00
+Toronto Ice Dome,Waterfront Soul Night,C,3,45.00
+Toronto Ice Dome,Waterfront Soul Night,C,4,45.00
+Dubai Pearl Arena,Golden Sands Symphony,A,1,170.00
+Dubai Pearl Arena,Golden Sands Symphony,A,2,170.00
+Dubai Pearl Arena,Golden Sands Symphony,B,1,90.00
+Dubai Pearl Arena,Golden Sands Symphony,B,2,90.00
+Dubai Pearl Arena,Golden Sands Symphony,B,3,90.00
+Dubai Pearl Arena,Golden Sands Symphony,B,4,90.00
+Dubai Pearl Arena,Golden Sands Symphony,C,1,45.00
+Dubai Pearl Arena,Golden Sands Symphony,C,2,45.00
+Dubai Pearl Arena,Golden Sands Symphony,C,3,45.00
+Dubai Pearl Arena,Golden Sands Symphony,C,4,45.00
+Dubai Pearl Arena,Table Mountain Sessions,A,1,170.00
+Dubai Pearl Arena,Table Mountain Sessions,A,2,170.00
+Dubai Pearl Arena,Table Mountain Sessions,B,1,90.00
+Dubai Pearl Arena,Table Mountain Sessions,B,2,90.00
+Dubai Pearl Arena,Table Mountain Sessions,B,3,90.00
+Dubai Pearl Arena,Table Mountain Sessions,B,4,90.00
+Dubai Pearl Arena,Table Mountain Sessions,C,1,45.00
+Dubai Pearl Arena,Table Mountain Sessions,C,2,45.00
+Dubai Pearl Arena,Table Mountain Sessions,C,3,45.00
+Dubai Pearl Arena,Table Mountain Sessions,C,4,45.00
+Dubai Pearl Arena,Bollywood Beats Live,A,1,170.00
+Dubai Pearl Arena,Bollywood Beats Live,A,2,170.00
+Dubai Pearl Arena,Bollywood Beats Live,B,1,90.00
+Dubai Pearl Arena,Bollywood Beats Live,B,2,90.00
+Dubai Pearl Arena,Bollywood Beats Live,B,3,90.00
+Dubai Pearl Arena,Bollywood Beats Live,B,4,90.00
+Dubai Pearl Arena,Bollywood Beats Live,C,1,45.00
+Dubai Pearl Arena,Bollywood Beats Live,C,2,45.00
+Dubai Pearl Arena,Bollywood Beats Live,C,3,45.00
+Dubai Pearl Arena,Bollywood Beats Live,C,4,45.00
+Dubai Pearl Arena,Carnival Warmup Show,A,1,170.00
+Dubai Pearl Arena,Carnival Warmup Show,A,2,170.00
+Dubai Pearl Arena,Carnival Warmup Show,B,1,90.00
+Dubai Pearl Arena,Carnival Warmup Show,B,2,90.00
+Dubai Pearl Arena,Carnival Warmup Show,B,3,90.00
+Dubai Pearl Arena,Carnival Warmup Show,B,4,90.00
+Dubai Pearl Arena,Carnival Warmup Show,C,1,45.00
+Dubai Pearl Arena,Carnival Warmup Show,C,2,45.00
+Dubai Pearl Arena,Carnival Warmup Show,C,3,45.00
+Dubai Pearl Arena,Carnival Warmup Show,C,4,45.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,A,1,170.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,A,2,170.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,B,1,90.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,B,2,90.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,B,3,90.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,B,4,90.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,C,1,45.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,C,2,45.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,C,3,45.00
+Mumbai Convention Centre,Maple Leaf Comedy Night,C,4,45.00
+Mumbai Convention Centre,African Jazz Revival,A,1,170.00
+Mumbai Convention Centre,African Jazz Revival,A,2,170.00
+Mumbai Convention Centre,African Jazz Revival,B,1,90.00
+Mumbai Convention Centre,African Jazz Revival,B,2,90.00
+Mumbai Convention Centre,African Jazz Revival,B,3,90.00
+Mumbai Convention Centre,African Jazz Revival,B,4,90.00
+Mumbai Convention Centre,African Jazz Revival,C,1,45.00
+Mumbai Convention Centre,African Jazz Revival,C,2,45.00
+Mumbai Convention Centre,African Jazz Revival,C,3,45.00
+Mumbai Convention Centre,African Jazz Revival,C,4,45.00
+Mumbai Convention Centre,Auckland Indie Fest,A,1,170.00
+Mumbai Convention Centre,Auckland Indie Fest,A,2,170.00
+Mumbai Convention Centre,Auckland Indie Fest,B,1,90.00
+Mumbai Convention Centre,Auckland Indie Fest,B,2,90.00
+Mumbai Convention Centre,Auckland Indie Fest,B,3,90.00
+Mumbai Convention Centre,Auckland Indie Fest,B,4,90.00
+Mumbai Convention Centre,Auckland Indie Fest,C,1,45.00
+Mumbai Convention Centre,Auckland Indie Fest,C,2,45.00
+Mumbai Convention Centre,Auckland Indie Fest,C,3,45.00
+Mumbai Convention Centre,Auckland Indie Fest,C,4,45.00
+Mumbai Convention Centre,Harbourside Acoustic Set,A,1,170.00
+Mumbai Convention Centre,Harbourside Acoustic Set,A,2,170.00
+Mumbai Convention Centre,Harbourside Acoustic Set,B,1,90.00
+Mumbai Convention Centre,Harbourside Acoustic Set,B,2,90.00
+Mumbai Convention Centre,Harbourside Acoustic Set,B,3,90.00
+Mumbai Convention Centre,Harbourside Acoustic Set,B,4,90.00
+Mumbai Convention Centre,Harbourside Acoustic Set,C,1,45.00
+Mumbai Convention Centre,Harbourside Acoustic Set,C,2,45.00
+Mumbai Convention Centre,Harbourside Acoustic Set,C,3,45.00
+Mumbai Convention Centre,Harbourside Acoustic Set,C,4,45.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,A,1,170.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,A,2,170.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,B,1,90.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,B,2,90.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,B,3,90.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,B,4,90.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,C,1,45.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,C,2,45.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,C,3,45.00
+Cape Town Waterfront Hall,Pacific Rim Showcase,C,4,45.00
+Cape Town Waterfront Hall,Monsoon Melodies,A,1,170.00
+Cape Town Waterfront Hall,Monsoon Melodies,A,2,170.00
+Cape Town Waterfront Hall,Monsoon Melodies,B,1,90.00
+Cape Town Waterfront Hall,Monsoon Melodies,B,2,90.00
+Cape Town Waterfront Hall,Monsoon Melodies,B,3,90.00
+Cape Town Waterfront Hall,Monsoon Melodies,B,4,90.00
+Cape Town Waterfront Hall,Monsoon Melodies,C,1,45.00
+Cape Town Waterfront Hall,Monsoon Melodies,C,2,45.00
+Cape Town Waterfront Hall,Monsoon Melodies,C,3,45.00
+Cape Town Waterfront Hall,Monsoon Melodies,C,4,45.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,A,1,170.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,A,2,170.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,B,1,90.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,B,2,90.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,B,3,90.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,B,4,90.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,C,1,45.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,C,2,45.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,C,3,45.00
+Cape Town Waterfront Hall,Skyline Jazz Evening,C,4,45.00
+Cape Town Waterfront Hall,Sakura Symphony,A,1,170.00
+Cape Town Waterfront Hall,Sakura Symphony,A,2,170.00
+Cape Town Waterfront Hall,Sakura Symphony,B,1,90.00
+Cape Town Waterfront Hall,Sakura Symphony,B,2,90.00
+Cape Town Waterfront Hall,Sakura Symphony,B,3,90.00
+Cape Town Waterfront Hall,Sakura Symphony,B,4,90.00
+Cape Town Waterfront Hall,Sakura Symphony,C,1,45.00
+Cape Town Waterfront Hall,Sakura Symphony,C,2,45.00
+Cape Town Waterfront Hall,Sakura Symphony,C,3,45.00
+Cape Town Waterfront Hall,Sakura Symphony,C,4,45.00
+Sao Paulo Music Hall,Winter Rock Festival,A,1,170.00
+Sao Paulo Music Hall,Winter Rock Festival,A,2,170.00
+Sao Paulo Music Hall,Winter Rock Festival,B,1,90.00
+Sao Paulo Music Hall,Winter Rock Festival,B,2,90.00
+Sao Paulo Music Hall,Winter Rock Festival,B,3,90.00
+Sao Paulo Music Hall,Winter Rock Festival,B,4,90.00
+Sao Paulo Music Hall,Winter Rock Festival,C,1,45.00
+Sao Paulo Music Hall,Winter Rock Festival,C,2,45.00
+Sao Paulo Music Hall,Winter Rock Festival,C,3,45.00
+Sao Paulo Music Hall,Winter Rock Festival,C,4,45.00
+Sao Paulo Music Hall,Classical Ragas Night,A,1,170.00
+Sao Paulo Music Hall,Classical Ragas Night,A,2,170.00
+Sao Paulo Music Hall,Classical Ragas Night,B,1,90.00
+Sao Paulo Music Hall,Classical Ragas Night,B,2,90.00
+Sao Paulo Music Hall,Classical Ragas Night,B,3,90.00
+Sao Paulo Music Hall,Classical Ragas Night,B,4,90.00
+Sao Paulo Music Hall,Classical Ragas Night,C,1,45.00
+Sao Paulo Music Hall,Classical Ragas Night,C,2,45.00
+Sao Paulo Music Hall,Classical Ragas Night,C,3,45.00
+Sao Paulo Music Hall,Classical Ragas Night,C,4,45.00
+Sao Paulo Music Hall,Paulista Jazz Collective,A,1,170.00
+Sao Paulo Music Hall,Paulista Jazz Collective,A,2,170.00
+Sao Paulo Music Hall,Paulista Jazz Collective,B,1,90.00
+Sao Paulo Music Hall,Paulista Jazz Collective,B,2,90.00
+Sao Paulo Music Hall,Paulista Jazz Collective,B,3,90.00
+Sao Paulo Music Hall,Paulista Jazz Collective,B,4,90.00
+Sao Paulo Music Hall,Paulista Jazz Collective,C,1,45.00
+Sao Paulo Music Hall,Paulista Jazz Collective,C,2,45.00
+Sao Paulo Music Hall,Paulista Jazz Collective,C,3,45.00
+Sao Paulo Music Hall,Paulista Jazz Collective,C,4,45.00
+Sao Paulo Music Hall,Northern Lights Acoustic,A,1,170.00
+Sao Paulo Music Hall,Northern Lights Acoustic,A,2,170.00
+Sao Paulo Music Hall,Northern Lights Acoustic,B,1,90.00
+Sao Paulo Music Hall,Northern Lights Acoustic,B,2,90.00
+Sao Paulo Music Hall,Northern Lights Acoustic,B,3,90.00
+Sao Paulo Music Hall,Northern Lights Acoustic,B,4,90.00
+Sao Paulo Music Hall,Northern Lights Acoustic,C,1,45.00
+Sao Paulo Music Hall,Northern Lights Acoustic,C,2,45.00
+Sao Paulo Music Hall,Northern Lights Acoustic,C,3,45.00
+Sao Paulo Music Hall,Northern Lights Acoustic,C,4,45.00
+Auckland Harbour Theatre,Midnight Piano Sessions,A,1,170.00
+Auckland Harbour Theatre,Midnight Piano Sessions,A,2,170.00
+Auckland Harbour Theatre,Midnight Piano Sessions,B,1,90.00
+Auckland Harbour Theatre,Midnight Piano Sessions,B,2,90.00
+Auckland Harbour Theatre,Midnight Piano Sessions,B,3,90.00
+Auckland Harbour Theatre,Midnight Piano Sessions,B,4,90.00
+Auckland Harbour Theatre,Midnight Piano Sessions,C,1,45.00
+Auckland Harbour Theatre,Midnight Piano Sessions,C,2,45.00
+Auckland Harbour Theatre,Midnight Piano Sessions,C,3,45.00
+Auckland Harbour Theatre,Midnight Piano Sessions,C,4,45.00
+Auckland Harbour Theatre,Desert Beats Festival,A,1,170.00
+Auckland Harbour Theatre,Desert Beats Festival,A,2,170.00
+Auckland Harbour Theatre,Desert Beats Festival,B,1,90.00
+Auckland Harbour Theatre,Desert Beats Festival,B,2,90.00
+Auckland Harbour Theatre,Desert Beats Festival,B,3,90.00
+Auckland Harbour Theatre,Desert Beats Festival,B,4,90.00
+Auckland Harbour Theatre,Desert Beats Festival,C,1,45.00
+Auckland Harbour Theatre,Desert Beats Festival,C,2,45.00
+Auckland Harbour Theatre,Desert Beats Festival,C,3,45.00
+Auckland Harbour Theatre,Desert Beats Festival,C,4,45.00
+Auckland Harbour Theatre,Anime Live Orchestra,A,1,170.00
+Auckland Harbour Theatre,Anime Live Orchestra,A,2,170.00
+Auckland Harbour Theatre,Anime Live Orchestra,B,1,90.00
+Auckland Harbour Theatre,Anime Live Orchestra,B,2,90.00
+Auckland Harbour Theatre,Anime Live Orchestra,B,3,90.00
+Auckland Harbour Theatre,Anime Live Orchestra,B,4,90.00
+Auckland Harbour Theatre,Anime Live Orchestra,C,1,45.00
+Auckland Harbour Theatre,Anime Live Orchestra,C,2,45.00
+Auckland Harbour Theatre,Anime Live Orchestra,C,3,45.00
+Auckland Harbour Theatre,Anime Live Orchestra,C,4,45.00
+Auckland Harbour Theatre,Chamber Strings Evening,A,1,170.00
+Auckland Harbour Theatre,Chamber Strings Evening,A,2,170.00
+Auckland Harbour Theatre,Chamber Strings Evening,B,1,90.00
+Auckland Harbour Theatre,Chamber Strings Evening,B,2,90.00
+Auckland Harbour Theatre,Chamber Strings Evening,B,3,90.00
+Auckland Harbour Theatre,Chamber Strings Evening,B,4,90.00
+Auckland Harbour Theatre,Chamber Strings Evening,C,1,45.00
+Auckland Harbour Theatre,Chamber Strings Evening,C,2,45.00
+Auckland Harbour Theatre,Chamber Strings Evening,C,3,45.00
+Auckland Harbour Theatre,Chamber Strings Evening,C,4,45.00
+Waterfront Arena,Electro Pulse Festival,A,1,150.00
+Waterfront Arena,Electro Pulse Festival,A,2,150.00
+Waterfront Arena,Electro Pulse Festival,B,1,80.00
+Waterfront Arena,Electro Pulse Festival,B,2,80.00
+Riverside Theatre,Comedy Gala,A,1,95.00
+Riverside Theatre,Comedy Gala,B,1,55.00
+Liberty Pavilion,Indie Rock Showcase,A,1,95.00
+Uber Arena,Winter Lights Festival,A,1,170.00
+Uber Arena,Winter Lights Festival,A,2,170.00
+Uber Arena,Winter Lights Festival,B,1,90.00
+Uber Arena,Winter Lights Festival,B,2,90.00
+Uber Arena,Winter Lights Festival,B,3,90.00
+Uber Arena,Winter Lights Festival,B,4,90.00
+Uber Arena,Winter Lights Festival,C,1,45.00
+Uber Arena,Winter Lights Festival,C,2,45.00
+Uber Arena,Winter Lights Festival,C,3,45.00
+Uber Arena,Winter Lights Festival,C,4,45.00
+Uber Arena,Berlin Beats Arena Night,A,1,170.00
+Uber Arena,Berlin Beats Arena Night,A,2,170.00
+Uber Arena,Berlin Beats Arena Night,B,1,90.00
+Uber Arena,Berlin Beats Arena Night,B,2,90.00
+Uber Arena,Berlin Beats Arena Night,B,3,90.00
+Uber Arena,Berlin Beats Arena Night,B,4,90.00
+Uber Arena,Berlin Beats Arena Night,C,1,45.00
+Uber Arena,Berlin Beats Arena Night,C,2,45.00
+Uber Arena,Berlin Beats Arena Night,C,3,45.00
+Uber Arena,Berlin Beats Arena Night,C,4,45.00
+Uber Arena,New Year Countdown Concert,A,1,170.00
+Uber Arena,New Year Countdown Concert,A,2,170.00
+Uber Arena,New Year Countdown Concert,B,1,90.00
+Uber Arena,New Year Countdown Concert,B,2,90.00
+Uber Arena,New Year Countdown Concert,B,3,90.00
+Uber Arena,New Year Countdown Concert,B,4,90.00
+Uber Arena,New Year Countdown Concert,C,1,45.00
+Uber Arena,New Year Countdown Concert,C,2,45.00
+Uber Arena,New Year Countdown Concert,C,3,45.00
+Uber Arena,New Year Countdown Concert,C,4,45.00

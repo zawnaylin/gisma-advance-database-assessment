@@ -78,3 +78,26 @@ erDiagram
     BOOKINGS ||--o{ BOOKING_SEATS : "includes"
     EVENT_SEATS ||--o{ BOOKING_SEATS : "reserved via"
     BOOKINGS ||--o| PAYMENTS : "paid by"
+
+    %% --- Different domain below: a MongoDB collection, not a Postgres table. ---
+    %% EVENT_DETAILS holds category-specific event content -- the "attributes"
+    %% field is deliberately unshaped (a concert's artist, a conference's
+    %% speaker list, a sports fixture's teams are all different shapes) --
+    %% exactly the case a rigid relational column set handles poorly.
+    %% The relationship below is NOT a real foreign key: sql_event_id is an
+    %% application-maintained reference across two separate database
+    %% systems, with no engine on either side able to enforce it.
+    EVENT_DETAILS {
+        ObjectId _id PK
+        int sql_event_id "app-enforced reference to EVENTS.event_id, not a real FK"
+        string title
+        string category "concert | conference | sports | theatre"
+        string description
+        array tags
+        object attributes "shape varies by category -- the reason this is a document, not a table"
+        object media "poster_url, gallery"
+        ISODate created_at
+        ISODate updated_at
+    }
+
+    EVENTS ||--o| EVENT_DETAILS : "documented by (app-enforced only)"

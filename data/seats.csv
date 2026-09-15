@@ -1,0 +1,101 @@
+venue_name,seat_row,seat_number,seat_tier
+Waterfront Arena,A,1,VIP
+Waterfront Arena,A,2,VIP
+Waterfront Arena,B,1,standard
+Waterfront Arena,B,2,standard
+Old Town Hall,A,1,VIP
+Old Town Hall,B,1,standard
+Riverside Theatre,A,1,VIP
+Riverside Theatre,B,1,standard
+Liberty Pavilion,A,1,VIP
+Sunset Bowl,A,1,VIP
+Tokyo Grand Hall,A,1,VIP
+Tokyo Grand Hall,A,2,VIP
+Tokyo Grand Hall,B,1,standard
+Tokyo Grand Hall,B,2,standard
+Tokyo Grand Hall,B,3,standard
+Tokyo Grand Hall,B,4,standard
+Tokyo Grand Hall,C,1,economy
+Tokyo Grand Hall,C,2,economy
+Tokyo Grand Hall,C,3,economy
+Tokyo Grand Hall,C,4,economy
+Paris Opera Court,A,1,VIP
+Paris Opera Court,A,2,VIP
+Paris Opera Court,B,1,standard
+Paris Opera Court,B,2,standard
+Paris Opera Court,B,3,standard
+Paris Opera Court,B,4,standard
+Paris Opera Court,C,1,economy
+Paris Opera Court,C,2,economy
+Paris Opera Court,C,3,economy
+Paris Opera Court,C,4,economy
+Toronto Ice Dome,A,1,VIP
+Toronto Ice Dome,A,2,VIP
+Toronto Ice Dome,B,1,standard
+Toronto Ice Dome,B,2,standard
+Toronto Ice Dome,B,3,standard
+Toronto Ice Dome,B,4,standard
+Toronto Ice Dome,C,1,economy
+Toronto Ice Dome,C,2,economy
+Toronto Ice Dome,C,3,economy
+Toronto Ice Dome,C,4,economy
+Dubai Pearl Arena,A,1,VIP
+Dubai Pearl Arena,A,2,VIP
+Dubai Pearl Arena,B,1,standard
+Dubai Pearl Arena,B,2,standard
+Dubai Pearl Arena,B,3,standard
+Dubai Pearl Arena,B,4,standard
+Dubai Pearl Arena,C,1,economy
+Dubai Pearl Arena,C,2,economy
+Dubai Pearl Arena,C,3,economy
+Dubai Pearl Arena,C,4,economy
+Mumbai Convention Centre,A,1,VIP
+Mumbai Convention Centre,A,2,VIP
+Mumbai Convention Centre,B,1,standard
+Mumbai Convention Centre,B,2,standard
+Mumbai Convention Centre,B,3,standard
+Mumbai Convention Centre,B,4,standard
+Mumbai Convention Centre,C,1,economy
+Mumbai Convention Centre,C,2,economy
+Mumbai Convention Centre,C,3,economy
+Mumbai Convention Centre,C,4,economy
+Cape Town Waterfront Hall,A,1,VIP
+Cape Town Waterfront Hall,A,2,VIP
+Cape Town Waterfront Hall,B,1,standard
+Cape Town Waterfront Hall,B,2,standard
+Cape Town Waterfront Hall,B,3,standard
+Cape Town Waterfront Hall,B,4,standard
+Cape Town Waterfront Hall,C,1,economy
+Cape Town Waterfront Hall,C,2,economy
+Cape Town Waterfront Hall,C,3,economy
+Cape Town Waterfront Hall,C,4,economy
+Sao Paulo Music Hall,A,1,VIP
+Sao Paulo Music Hall,A,2,VIP
+Sao Paulo Music Hall,B,1,standard
+Sao Paulo Music Hall,B,2,standard
+Sao Paulo Music Hall,B,3,standard
+Sao Paulo Music Hall,B,4,standard
+Sao Paulo Music Hall,C,1,economy
+Sao Paulo Music Hall,C,2,economy
+Sao Paulo Music Hall,C,3,economy
+Sao Paulo Music Hall,C,4,economy
+Auckland Harbour Theatre,A,1,VIP
+Auckland Harbour Theatre,A,2,VIP
+Auckland Harbour Theatre,B,1,standard
+Auckland Harbour Theatre,B,2,standard
+Auckland Harbour Theatre,B,3,standard
+Auckland Harbour Theatre,B,4,standard
+Auckland Harbour Theatre,C,1,economy
+Auckland Harbour Theatre,C,2,economy
+Auckland Harbour Theatre,C,3,economy
+Auckland Harbour Theatre,C,4,economy
+Uber Arena,A,1,VIP
+Uber Arena,A,2,VIP
+Uber Arena,B,1,standard
+Uber Arena,B,2,standard
+Uber Arena,B,3,standard
+Uber Arena,B,4,standard
+Uber Arena,C,1,economy
+Uber Arena,C,2,economy
+Uber Arena,C,3,economy
+Uber Arena,C,4,economy

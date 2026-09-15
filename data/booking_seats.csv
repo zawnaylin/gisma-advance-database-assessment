@@ -1,0 +1,134 @@
+booking_reference,venue_name,event_title,seat_row,seat_number
+BK-0001,Waterfront Arena,Autumn Jazz Night,A,1
+BK-0001,Waterfront Arena,Autumn Jazz Night,A,2
+BK-0002,Waterfront Arena,Autumn Jazz Night,B,1
+BK-0003,Old Town Hall,Chamber Orchestra Evening,A,1
+BK-0004,Riverside Theatre,Shakespeare Revisited,A,1
+BK-0005,Riverside Theatre,Shakespeare Revisited,B,1
+BK-0006,Liberty Pavilion,Broadway Night,A,1
+BK-0007,Sunset Bowl,Summer Sunset Sessions,A,1
+BK-0008,Dubai Pearl Arena,Carnival Warmup Show,A,1
+BK-0009,Dubai Pearl Arena,Golden Sands Symphony,C,1
+BK-0010,Paris Opera Court,Bossa Nova Night,C,1
+BK-0011,Paris Opera Court,Harbourfront Big Band,B,1
+BK-0012,Sao Paulo Music Hall,Paulista Jazz Collective,A,1
+BK-0013,Paris Opera Court,Southern Skies Concert,C,2
+BK-0014,Cape Town Waterfront Hall,Monsoon Melodies,B,2
+BK-0014,Auckland Harbour Theatre,Midnight Piano Sessions,A,1
+BK-0015,Mumbai Convention Centre,African Jazz Revival,C,2
+BK-0015,Cape Town Waterfront Hall,Sakura Symphony,A,1
+BK-0016,Tokyo Grand Hall,Samba Sunset Festival,A,2
+BK-0017,Cape Town Waterfront Hall,Monsoon Melodies,A,1
+BK-0017,Dubai Pearl Arena,Golden Sands Symphony,A,2
+BK-0018,Dubai Pearl Arena,Golden Sands Symphony,B,1
+BK-0018,Toronto Ice Dome,Arabian Nights Gala,C,1
+BK-0019,Mumbai Convention Centre,Maple Leaf Comedy Night,C,1
+BK-0019,Mumbai Convention Centre,Harbourside Acoustic Set,A,2
+BK-0020,Sao Paulo Music Hall,Classical Ragas Night,A,1
+BK-0021,Tokyo Grand Hall,Samba Sunset Festival,B,1
+BK-0021,Sao Paulo Music Hall,Classical Ragas Night,C,2
+BK-0022,Auckland Harbour Theatre,Midnight Piano Sessions,A,2
+BK-0022,Toronto Ice Dome,Neon Nights Concert,C,3
+BK-0023,Paris Opera Court,Harbourfront Big Band,C,1
+BK-0024,Tokyo Grand Hall,Cape Sunset Serenade,C,2
+BK-0025,Sao Paulo Music Hall,Winter Rock Festival,C,1
+BK-0026,Toronto Ice Dome,Waterfront Soul Night,B,4
+BK-0027,Tokyo Grand Hall,Samba Sunset Festival,C,3
+BK-0028,Paris Opera Court,Harbourfront Big Band,B,2
+BK-0028,Mumbai Convention Centre,African Jazz Revival,A,2
+BK-0029,Tokyo Grand Hall,Jazz sous les Etoiles,B,4
+BK-0030,Cape Town Waterfront Hall,Skyline Jazz Evening,B,3
+BK-0031,Paris Opera Court,Southern Skies Concert,B,4
+BK-0032,Mumbai Convention Centre,Maple Leaf Comedy Night,C,3
+BK-0033,Cape Town Waterfront Hall,Sakura Symphony,C,2
+BK-0034,Sao Paulo Music Hall,Winter Rock Festival,B,2
+BK-0034,Dubai Pearl Arena,Bollywood Beats Live,B,2
+BK-0035,Tokyo Grand Hall,Jazz sous les Etoiles,A,2
+BK-0036,Paris Opera Court,Parisian Cabaret Night,B,3
+BK-0037,Mumbai Convention Centre,Harbourside Acoustic Set,C,4
+BK-0038,Cape Town Waterfront Hall,Skyline Jazz Evening,C,3
+BK-0038,Toronto Ice Dome,Arabian Nights Gala,B,2
+BK-0039,Tokyo Grand Hall,Cape Sunset Serenade,B,2
+BK-0039,Toronto Ice Dome,Neon Nights Concert,B,4
+BK-0040,Auckland Harbour Theatre,Desert Beats Festival,A,1
+BK-0041,Toronto Ice Dome,Neon Nights Concert,A,1
+BK-0041,Sao Paulo Music Hall,Winter Rock Festival,B,4
+BK-0042,Auckland Harbour Theatre,Midnight Piano Sessions,B,1
+BK-0042,Mumbai Convention Centre,Maple Leaf Comedy Night,B,3
+BK-0043,Cape Town Waterfront Hall,Sakura Symphony,B,1
+BK-0044,Dubai Pearl Arena,Bollywood Beats Live,C,2
+BK-0045,Paris Opera Court,Parisian Cabaret Night,C,3
+BK-0046,Tokyo Grand Hall,Jazz sous les Etoiles,C,3
+BK-0047,Toronto Ice Dome,Arabian Nights Gala,C,2
+BK-0048,Sao Paulo Music Hall,Winter Rock Festival,B,1
+BK-0049,Sao Paulo Music Hall,Northern Lights Acoustic,B,4
+BK-0050,Paris Opera Court,Bossa Nova Night,A,2
+BK-0051,Sao Paulo Music Hall,Paulista Jazz Collective,C,3
+BK-0051,Auckland Harbour Theatre,Chamber Strings Evening,C,3
+BK-0052,Auckland Harbour Theatre,Chamber Strings Evening,C,2
+BK-0053,Cape Town Waterfront Hall,Skyline Jazz Evening,C,1
+BK-0054,Paris Opera Court,Harbourfront Big Band,B,3
+BK-0055,Cape Town Waterfront Hall,Monsoon Melodies,C,2
+BK-0056,Sao Paulo Music Hall,Classical Ragas Night,B,1
+BK-0057,Dubai Pearl Arena,Bollywood Beats Live,C,3
+BK-0058,Toronto Ice Dome,La Boheme Revival,B,3
+BK-0058,Paris Opera Court,Parisian Cabaret Night,B,1
+BK-0059,Paris Opera Court,Bossa Nova Night,B,3
+BK-0060,Mumbai Convention Centre,Auckland Indie Fest,B,1
+BK-0061,Tokyo Grand Hall,Cape Sunset Serenade,A,1
+BK-0062,Cape Town Waterfront Hall,Skyline Jazz Evening,B,1
+BK-0063,Toronto Ice Dome,Waterfront Soul Night,A,1
+BK-0064,Dubai Pearl Arena,Carnival Warmup Show,C,1
+BK-0065,Auckland Harbour Theatre,Desert Beats Festival,B,2
+BK-0066,Auckland Harbour Theatre,Midnight Piano Sessions,C,3
+BK-0066,Tokyo Grand Hall,Jazz sous les Etoiles,B,1
+BK-0067,Tokyo Grand Hall,Samba Sunset Festival,C,4
+BK-0068,Paris Opera Court,Southern Skies Concert,B,3
+BK-0069,Toronto Ice Dome,Waterfront Soul Night,C,4
+BK-0070,Sao Paulo Music Hall,Classical Ragas Night,B,2
+BK-0071,Cape Town Waterfront Hall,Pacific Rim Showcase,C,1
+BK-0072,Paris Opera Court,Southern Skies Concert,B,2
+BK-0073,Sao Paulo Music Hall,Winter Rock Festival,C,4
+BK-0074,Toronto Ice Dome,La Boheme Revival,C,2
+BK-0075,Tokyo Grand Hall,Samba Sunset Festival,B,4
+BK-0076,Dubai Pearl Arena,Bollywood Beats Live,B,1
+BK-0076,Tokyo Grand Hall,Cape Sunset Serenade,C,4
+BK-0077,Toronto Ice Dome,Arabian Nights Gala,C,3
+BK-0078,Auckland Harbour Theatre,Desert Beats Festival,B,3
+BK-0079,Paris Opera Court,Bossa Nova Night,B,2
+BK-0080,Mumbai Convention Centre,Harbourside Acoustic Set,A,1
+BK-0080,Sao Paulo Music Hall,Winter Rock Festival,C,3
+BK-0081,Tokyo Grand Hall,Cape Sunset Serenade,C,1
+BK-0082,Cape Town Waterfront Hall,Sakura Symphony,C,4
+BK-0083,Dubai Pearl Arena,Golden Sands Symphony,C,4
+BK-0083,Waterfront Arena,Electro Pulse Festival,B,2
+BK-0084,Sao Paulo Music Hall,Classical Ragas Night,C,1
+BK-0085,Mumbai Convention Centre,Maple Leaf Comedy Night,C,4
+BK-0086,Dubai Pearl Arena,Table Mountain Sessions,B,1
+BK-0087,Toronto Ice Dome,Arabian Nights Gala,B,1
+BK-0088,Toronto Ice Dome,La Boheme Revival,C,3
+BK-0088,Mumbai Convention Centre,Maple Leaf Comedy Night,B,2
+BK-0089,Auckland Harbour Theatre,Chamber Strings Evening,C,4
+BK-0090,Mumbai Convention Centre,African Jazz Revival,B,1
+BK-0091,Dubai Pearl Arena,Carnival Warmup Show,B,4
+BK-0092,Toronto Ice Dome,Arabian Nights Gala,C,4
+BK-0093,Mumbai Convention Centre,Maple Leaf Comedy Night,A,2
+BK-0094,Cape Town Waterfront Hall,Pacific Rim Showcase,C,3
+BK-0094,Cape Town Waterfront Hall,Sakura Symphony,C,1
+BK-0095,Dubai Pearl Arena,Table Mountain Sessions,C,3
+BK-0095,Auckland Harbour Theatre,Anime Live Orchestra,C,1
+BK-0096,Tokyo Grand Hall,Samba Sunset Festival,C,1
+BK-0096,Mumbai Convention Centre,Harbourside Acoustic Set,C,2
+BK-0097,Dubai Pearl Arena,Carnival Warmup Show,A,2
+BK-0098,Dubai Pearl Arena,Bollywood Beats Live,A,2
+BK-0099,Cape Town Waterfront Hall,Skyline Jazz Evening,C,4
+BK-0100,Dubai Pearl Arena,Carnival Warmup Show,C,2
+BK-0101,Uber Arena,New Year Countdown Concert,A,2
+BK-0102,Uber Arena,Winter Lights Festival,B,4
+BK-0103,Uber Arena,Berlin Beats Arena Night,B,4
+BK-0104,Uber Arena,New Year Countdown Concert,C,4
+BK-0105,Uber Arena,Winter Lights Festival,C,2
+BK-0106,Uber Arena,New Year Countdown Concert,C,3
+BK-0107,Uber Arena,Winter Lights Festival,C,4
+BK-0108,Uber Arena,Winter Lights Festival,A,1
+BK-0108,Uber Arena,Berlin Beats Arena Night,B,2

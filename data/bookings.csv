@@ -1,0 +1,109 @@
+booking_reference,user_email,venue_name,event_title,status,total_amount
+BK-0001,alice.tan@example.com,Waterfront Arena,Autumn Jazz Night,confirmed,300.00
+BK-0002,brandon.lee@example.com,Waterfront Arena,Autumn Jazz Night,pending,80.00
+BK-0003,chiara.rossi@example.com,Old Town Hall,Chamber Orchestra Evening,confirmed,120.00
+BK-0004,devon.clarke@example.com,Riverside Theatre,Shakespeare Revisited,confirmed,95.00
+BK-0005,elena.petrova@example.com,Riverside Theatre,Shakespeare Revisited,cancelled,55.00
+BK-0006,farid.haidari@example.com,Liberty Pavilion,Broadway Night,confirmed,180.00
+BK-0007,grace.kim@example.com,Sunset Bowl,Summer Sunset Sessions,pending,140.00
+BK-0008,brandon.lee@example.com,Dubai Pearl Arena,Carnival Warmup Show,confirmed,170.00
+BK-0009,elena.petrova@example.com,Dubai Pearl Arena,Golden Sands Symphony,confirmed,45.00
+BK-0010,evelyn.williams@example.com,Paris Opera Court,Bossa Nova Night,confirmed,45.00
+BK-0011,nina.brown@example.com,Paris Opera Court,Harbourfront Big Band,confirmed,90.00
+BK-0012,brandon.lee@example.com,Sao Paulo Music Hall,Paulista Jazz Collective,pending,170.00
+BK-0013,daniel.brown@example.com,Paris Opera Court,Southern Skies Concert,cancelled,45.00
+BK-0014,daniel.brown@example.com,Cape Town Waterfront Hall,Monsoon Melodies,pending,260.00
+BK-0015,farid.haidari@example.com,Mumbai Convention Centre,African Jazz Revival,pending,215.00
+BK-0016,james.martin@example.com,Tokyo Grand Hall,Samba Sunset Festival,pending,170.00
+BK-0017,evelyn.williams@example.com,Cape Town Waterfront Hall,Monsoon Melodies,cancelled,340.00
+BK-0018,devon.clarke@example.com,Dubai Pearl Arena,Golden Sands Symphony,confirmed,135.00
+BK-0019,henry.anderson@example.com,Mumbai Convention Centre,Maple Leaf Comedy Night,confirmed,215.00
+BK-0020,liam.kim@example.com,Sao Paulo Music Hall,Classical Ragas Night,pending,170.00
+BK-0021,liam.kim@example.com,Tokyo Grand Hall,Samba Sunset Festival,confirmed,135.00
+BK-0022,devon.clarke@example.com,Auckland Harbour Theatre,Midnight Piano Sessions,pending,215.00
+BK-0023,abigail.smith@example.com,Paris Opera Court,Harbourfront Big Band,pending,45.00
+BK-0024,devon.clarke@example.com,Tokyo Grand Hall,Cape Sunset Serenade,confirmed,45.00
+BK-0025,noah.miller@example.com,Sao Paulo Music Hall,Winter Rock Festival,confirmed,45.00
+BK-0026,alice.tan@example.com,Toronto Ice Dome,Waterfront Soul Night,confirmed,90.00
+BK-0027,chiara.rossi@example.com,Tokyo Grand Hall,Samba Sunset Festival,pending,45.00
+BK-0028,evelyn.miller@example.com,Paris Opera Court,Harbourfront Big Band,confirmed,260.00
+BK-0029,sophia.jones@example.com,Tokyo Grand Hall,Jazz sous les Etoiles,confirmed,90.00
+BK-0030,zoe.kim@example.com,Cape Town Waterfront Hall,Skyline Jazz Evening,cancelled,90.00
+BK-0031,alice.tan@example.com,Paris Opera Court,Southern Skies Concert,confirmed,90.00
+BK-0032,henry.anderson@example.com,Mumbai Convention Centre,Maple Leaf Comedy Night,cancelled,45.00
+BK-0033,lucas.davis@example.com,Cape Town Waterfront Hall,Sakura Symphony,confirmed,45.00
+BK-0034,lucas.smith@example.com,Sao Paulo Music Hall,Winter Rock Festival,confirmed,180.00
+BK-0035,daniel.brown@example.com,Tokyo Grand Hall,Jazz sous les Etoiles,pending,170.00
+BK-0036,lucas.smith@example.com,Paris Opera Court,Parisian Cabaret Night,confirmed,90.00
+BK-0037,zoe.kim@example.com,Mumbai Convention Centre,Harbourside Acoustic Set,confirmed,45.00
+BK-0038,lucas.smith@example.com,Cape Town Waterfront Hall,Skyline Jazz Evening,pending,135.00
+BK-0039,daniel.brown@example.com,Tokyo Grand Hall,Cape Sunset Serenade,confirmed,180.00
+BK-0040,devon.clarke@example.com,Auckland Harbour Theatre,Desert Beats Festival,confirmed,170.00
+BK-0041,henry.anderson@example.com,Toronto Ice Dome,Neon Nights Concert,confirmed,260.00
+BK-0042,james.martin@example.com,Auckland Harbour Theatre,Midnight Piano Sessions,pending,180.00
+BK-0043,lucas.smith@example.com,Cape Town Waterfront Hall,Sakura Symphony,confirmed,90.00
+BK-0044,liam.kim@example.com,Dubai Pearl Arena,Bollywood Beats Live,confirmed,45.00
+BK-0045,sophia.moore@example.com,Paris Opera Court,Parisian Cabaret Night,confirmed,45.00
+BK-0046,chiara.rossi@example.com,Tokyo Grand Hall,Jazz sous les Etoiles,confirmed,45.00
+BK-0047,evelyn.williams@example.com,Toronto Ice Dome,Arabian Nights Gala,confirmed,45.00
+BK-0048,nina.brown@example.com,Sao Paulo Music Hall,Winter Rock Festival,confirmed,90.00
+BK-0049,liam.kim@example.com,Sao Paulo Music Hall,Northern Lights Acoustic,confirmed,90.00
+BK-0050,henry.anderson@example.com,Paris Opera Court,Bossa Nova Night,pending,170.00
+BK-0051,sophia.moore@example.com,Sao Paulo Music Hall,Paulista Jazz Collective,confirmed,90.00
+BK-0052,evelyn.williams@example.com,Auckland Harbour Theatre,Chamber Strings Evening,confirmed,45.00
+BK-0053,grace.kim@example.com,Cape Town Waterfront Hall,Skyline Jazz Evening,confirmed,45.00
+BK-0054,chiara.rossi@example.com,Paris Opera Court,Harbourfront Big Band,confirmed,90.00
+BK-0055,chiara.rossi@example.com,Cape Town Waterfront Hall,Monsoon Melodies,cancelled,45.00
+BK-0056,alice.tan@example.com,Sao Paulo Music Hall,Classical Ragas Night,confirmed,90.00
+BK-0057,grace.kim@example.com,Dubai Pearl Arena,Bollywood Beats Live,confirmed,45.00
+BK-0058,farid.haidari@example.com,Toronto Ice Dome,La Boheme Revival,pending,180.00
+BK-0059,alice.tan@example.com,Paris Opera Court,Bossa Nova Night,pending,90.00
+BK-0060,zoe.kim@example.com,Mumbai Convention Centre,Auckland Indie Fest,confirmed,90.00
+BK-0061,lucas.smith@example.com,Tokyo Grand Hall,Cape Sunset Serenade,confirmed,170.00
+BK-0062,evelyn.williams@example.com,Cape Town Waterfront Hall,Skyline Jazz Evening,cancelled,90.00
+BK-0063,evelyn.williams@example.com,Toronto Ice Dome,Waterfront Soul Night,cancelled,170.00
+BK-0064,evelyn.williams@example.com,Dubai Pearl Arena,Carnival Warmup Show,confirmed,45.00
+BK-0065,james.martin@example.com,Auckland Harbour Theatre,Desert Beats Festival,confirmed,90.00
+BK-0066,daniel.brown@example.com,Auckland Harbour Theatre,Midnight Piano Sessions,cancelled,135.00
+BK-0067,olivia.smith@example.com,Tokyo Grand Hall,Samba Sunset Festival,pending,45.00
+BK-0068,grace.kim@example.com,Paris Opera Court,Southern Skies Concert,confirmed,90.00
+BK-0069,noah.miller@example.com,Toronto Ice Dome,Waterfront Soul Night,pending,45.00
+BK-0070,james.martin@example.com,Sao Paulo Music Hall,Classical Ragas Night,confirmed,90.00
+BK-0071,olivia.smith@example.com,Cape Town Waterfront Hall,Pacific Rim Showcase,confirmed,45.00
+BK-0072,daniel.brown@example.com,Paris Opera Court,Southern Skies Concert,confirmed,90.00
+BK-0073,james.martin@example.com,Sao Paulo Music Hall,Winter Rock Festival,confirmed,45.00
+BK-0074,daniel.brown@example.com,Toronto Ice Dome,La Boheme Revival,confirmed,45.00
+BK-0075,james.martin@example.com,Tokyo Grand Hall,Samba Sunset Festival,confirmed,90.00
+BK-0076,grace.kim@example.com,Dubai Pearl Arena,Bollywood Beats Live,confirmed,135.00
+BK-0077,elena.petrova@example.com,Toronto Ice Dome,Arabian Nights Gala,confirmed,45.00
+BK-0078,lucas.smith@example.com,Auckland Harbour Theatre,Desert Beats Festival,confirmed,90.00
+BK-0079,sophia.jones@example.com,Paris Opera Court,Bossa Nova Night,confirmed,90.00
+BK-0080,zoe.kim@example.com,Mumbai Convention Centre,Harbourside Acoustic Set,confirmed,215.00
+BK-0081,abigail.smith@example.com,Tokyo Grand Hall,Cape Sunset Serenade,pending,45.00
+BK-0082,daniel.brown@example.com,Cape Town Waterfront Hall,Sakura Symphony,confirmed,45.00
+BK-0083,zoe.kim@example.com,Dubai Pearl Arena,Golden Sands Symphony,confirmed,125.00
+BK-0084,evelyn.miller@example.com,Sao Paulo Music Hall,Classical Ragas Night,confirmed,45.00
+BK-0085,chiara.rossi@example.com,Mumbai Convention Centre,Maple Leaf Comedy Night,confirmed,45.00
+BK-0086,henry.anderson@example.com,Dubai Pearl Arena,Table Mountain Sessions,cancelled,90.00
+BK-0087,lucas.davis@example.com,Toronto Ice Dome,Arabian Nights Gala,cancelled,90.00
+BK-0088,marcus.walker@example.com,Toronto Ice Dome,La Boheme Revival,confirmed,135.00
+BK-0089,liam.kim@example.com,Auckland Harbour Theatre,Chamber Strings Evening,cancelled,45.00
+BK-0090,abigail.smith@example.com,Mumbai Convention Centre,African Jazz Revival,pending,90.00
+BK-0091,henry.anderson@example.com,Dubai Pearl Arena,Carnival Warmup Show,cancelled,90.00
+BK-0092,evelyn.miller@example.com,Toronto Ice Dome,Arabian Nights Gala,confirmed,45.00
+BK-0093,daniel.brown@example.com,Mumbai Convention Centre,Maple Leaf Comedy Night,pending,170.00
+BK-0094,abigail.smith@example.com,Cape Town Waterfront Hall,Pacific Rim Showcase,confirmed,90.00
+BK-0095,farid.haidari@example.com,Dubai Pearl Arena,Table Mountain Sessions,confirmed,90.00
+BK-0096,evelyn.williams@example.com,Tokyo Grand Hall,Samba Sunset Festival,confirmed,90.00
+BK-0097,sophia.jones@example.com,Dubai Pearl Arena,Carnival Warmup Show,cancelled,170.00
+BK-0098,zoe.kim@example.com,Dubai Pearl Arena,Bollywood Beats Live,cancelled,170.00
+BK-0099,sophia.jones@example.com,Cape Town Waterfront Hall,Skyline Jazz Evening,confirmed,45.00
+BK-0100,grace.kim@example.com,Dubai Pearl Arena,Carnival Warmup Show,confirmed,45.00
+BK-0101,zoe.kim@example.com,Uber Arena,New Year Countdown Concert,confirmed,170.00
+BK-0102,elena.petrova@example.com,Uber Arena,Winter Lights Festival,confirmed,90.00
+BK-0103,abigail.smith@example.com,Uber Arena,Berlin Beats Arena Night,confirmed,90.00
+BK-0104,evelyn.miller@example.com,Uber Arena,New Year Countdown Concert,confirmed,45.00
+BK-0105,henry.anderson@example.com,Uber Arena,Winter Lights Festival,confirmed,45.00
+BK-0106,lucas.davis@example.com,Uber Arena,New Year Countdown Concert,confirmed,45.00
+BK-0107,chiara.rossi@example.com,Uber Arena,Winter Lights Festival,confirmed,45.00
+BK-0108,evelyn.williams@example.com,Uber Arena,Winter Lights Festival,confirmed,260.00

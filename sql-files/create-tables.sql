@@ -1,14 +1,23 @@
-CREATE TABLE users
+-- Profile/domain data for a person using the system. Credential fields
+-- (password_hash, etc.) are deliberately not here -- they'll live in a
+-- separate identity/account table once that's introduced; user_profiles
+-- stays descriptive-data-only rather than mixing the two concerns.
+CREATE TABLE user_profiles
 (
-    user_id       INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    name          VARCHAR(100)             NOT NULL,
-    email         VARCHAR(255)             NOT NULL,
-    password_hash VARCHAR(255)             NOT NULL,
-    role          VARCHAR(20)              NOT NULL DEFAULT 'customer',
-    created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    updated_at    TIMESTAMP WITH TIME ZONE,
-    CONSTRAINT uq_users_email UNIQUE (email),
-    CONSTRAINT chk_users_role CHECK (role IN ('customer', 'admin', 'organizer'))
+    user_id    INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name       VARCHAR(100)             NOT NULL,
+    email      VARCHAR(255)             NOT NULL,
+    role       VARCHAR(20)              NOT NULL DEFAULT 'customer',
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE,
+    CONSTRAINT uq_user_profiles_email UNIQUE (email),
+    CONSTRAINT chk_user_profiles_role CHECK (role IN ('customer', 'admin', 'organizer'))
+);
+
+-- Timezone Lookup Table for Venues
+CREATE TABLE time_zones
+(
+    name VARCHAR(64) PRIMARY KEY
 );
 
 CREATE TABLE venues
@@ -21,12 +30,6 @@ CREATE TABLE venues
     time_zone      VARCHAR(64),
     CONSTRAINT fk_venues_time_zone FOREIGN KEY (time_zone) REFERENCES time_zones (name),
     CONSTRAINT chk_venues_capacity CHECK (total_capacity IS NULL OR total_capacity >= 0)
-);
-
--- Timezone Lookup Table for Venues
-CREATE TABLE time_zones
-(
-    name VARCHAR(64) PRIMARY KEY
 );
 
 CREATE TABLE seats
@@ -59,9 +62,6 @@ CREATE TABLE events
         CHECK (ends_at IS NULL OR ends_at > starts_at)
 );
 
-CREATE INDEX idx_events_venue ON events (venue_id);
-CREATE INDEX idx_events_starts_at ON events (starts_at);
-
 -- a physical seat made available for a specific event, with its own price / availability / optimistic-lock version
 
 CREATE TABLE event_seats
@@ -81,22 +81,33 @@ CREATE TABLE event_seats
     CONSTRAINT chk_event_seats_status CHECK (status IN ('available', 'held', 'booked'))
 );
 
-CREATE INDEX idx_event_seats_seat ON event_seats (seat_id);
-CREATE INDEX idx_event_seats_event_status ON event_seats (event_id, status);
+-- Backs booking_reference below. Independent of booking_id so the code's
+-- format can change later without touching the surrogate key.
+CREATE SEQUENCE booking_reference_seq;
 
 CREATE TABLE bookings
 (
-    booking_id   INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    user_id      INTEGER                  NOT NULL,
-    event_id     INTEGER                  NOT NULL,
-    status       VARCHAR(20)              NOT NULL DEFAULT 'pending',
-    total_amount NUMERIC(10, 2)           NOT NULL DEFAULT 0,
-    created_at   TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    confirmed_at TIMESTAMP WITH TIME ZONE,
-    cancelled_at TIMESTAMP WITH TIME ZONE,
-    updated_at   TIMESTAMP WITH TIME ZONE,
-    CONSTRAINT fk_bookings_user FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT,
+    booking_id         INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    user_id            INTEGER                  NOT NULL,
+    event_id           INTEGER                  NOT NULL,
+    status             VARCHAR(20)              NOT NULL DEFAULT 'pending',
+    total_amount       NUMERIC(10, 2)           NOT NULL DEFAULT 0,
+    -- Customer-facing confirmation code. Auto-generated for app-created bookings;
+    --     -- migrated rows supply their real historic code explicitly, overriding the default.
+    booking_reference VARCHAR(20) NOT NULL
+        DEFAULT ('BKE-' || lpad(nextval('booking_reference_seq')::text, 6, '0')),
+    -- Pointer back to the source system's own identifier for a migrated row.
+    -- Always NULL for bookings created directly in the app -- that's its
+    -- permanent, correct state, not a gap to be filled in later.
+    legacy_source_ref  VARCHAR(64),
+    created_at         TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    confirmed_at       TIMESTAMP WITH TIME ZONE,
+    cancelled_at       TIMESTAMP WITH TIME ZONE,
+    updated_at         TIMESTAMP WITH TIME ZONE,
+    CONSTRAINT fk_bookings_user FOREIGN KEY (user_id) REFERENCES user_profiles (user_id) ON DELETE RESTRICT,
     CONSTRAINT fk_bookings_event FOREIGN KEY (event_id) REFERENCES events (event_id) ON DELETE RESTRICT,
+    CONSTRAINT uq_bookings_reference UNIQUE (booking_reference),
+    CONSTRAINT chk_bookings_reference_not_blank CHECK (length(btrim(booking_reference)) > 0),
     CONSTRAINT chk_bookings_total_amount CHECK (total_amount >= 0),
     CONSTRAINT chk_bookings_status
         CHECK (status IN ('pending', 'confirmed', 'cancelled', 'expired')),
@@ -107,10 +118,6 @@ CREATE TABLE bookings
         CHECK ((status = 'cancelled' AND cancelled_at IS NOT NULL) OR status <> 'cancelled')
 );
 
-CREATE INDEX idx_bookings_user ON bookings (user_id);
-CREATE INDEX idx_bookings_event ON bookings (event_id);
-
-
 -- join: which event_seats a booking reserves
 
 CREATE TABLE booking_seats
@@ -118,13 +125,23 @@ CREATE TABLE booking_seats
     booking_seat_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     booking_id      INTEGER NOT NULL,
     event_seat_id   INTEGER NOT NULL,
+    -- Set when this seat is handed back (booking cancelled/expired). NULL
+    -- means "still an active claim" -- see the partial unique index below,
+    -- which is what actually enforces "no two active claims on one seat"
+    -- now that this isn't a plain table-wide UNIQUE.
+    released_at     TIMESTAMP WITH TIME ZONE,
     CONSTRAINT fk_booking_seats_booking FOREIGN KEY (booking_id) REFERENCES bookings (booking_id) ON DELETE CASCADE,
-    CONSTRAINT fk_booking_seats_event_seat FOREIGN KEY (event_seat_id) REFERENCES event_seats (event_seat_id) ON DELETE RESTRICT,
-    -- a given event seat can only belong to one active booking row
-    CONSTRAINT uq_booking_seats_event_seat UNIQUE (event_seat_id)
+    CONSTRAINT fk_booking_seats_event_seat FOREIGN KEY (event_seat_id) REFERENCES event_seats (event_seat_id) ON DELETE RESTRICT
 );
 
-CREATE INDEX idx_booking_seats_booking ON booking_seats (booking_id);
+-- A seat can be claimed by only one ACTIVE booking_seats row at a time --
+-- scoped to released_at IS NULL rather than the whole table, so a
+-- cancelled booking's row doesn't permanently block that seat from ever
+-- being booked again. A plain CONSTRAINT can't take a WHERE clause, so
+-- this has to be a partial index rather than a table constraint.
+CREATE UNIQUE INDEX uq_booking_seats_active_event_seat
+    ON booking_seats (event_seat_id)
+    WHERE released_at IS NULL;
 
 CREATE TABLE payments
 (
@@ -150,9 +167,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE TRIGGER users_before_update
+CREATE OR REPLACE TRIGGER user_profiles_before_update
     BEFORE UPDATE
-    ON users
+    ON user_profiles
     FOR EACH ROW
 EXECUTE FUNCTION set_updated_at();
 
@@ -172,7 +189,7 @@ $$
 BEGIN
     IF NEW.status = 'confirmed' AND OLD.status IS DISTINCT FROM 'confirmed' THEN
         NEW.confirmed_at = NOW();
-    ELSIF NEW.status = 'cancelled' AND OLD.staus IS DISTINCT FROM 'cancelled' THEN
+    ELSIF NEW.status = 'cancelled' AND OLD.status IS DISTINCT FROM 'cancelled' THEN
         NEW.cancelled_at = NOW();
     END IF;
     NEW.updated_at = NOW();

@@ -1,0 +1,15 @@
+name,address,city,total_capacity,time_zone
+Waterfront Arena,1 Harbor Rd,Berlin,5000,Europe/Berlin
+Old Town Hall,22 Market Sq,Munich,1200,Europe/Berlin
+Riverside Theatre,8 Thames Walk,London,2500,Europe/London
+Liberty Pavilion,500 5th Ave,New York,8000,America/New_York
+Sunset Bowl,900 Sunset Blvd,Los Angeles,3000,America/Los_Angeles
+Tokyo Grand Hall,4-1 Marunouchi,Tokyo,6000,Asia/Tokyo
+Paris Opera Court,12 Rue Favart,Paris,2200,Europe/Paris
+Toronto Ice Dome,40 Bay St,Toronto,4500,America/Toronto
+Dubai Pearl Arena,Sheikh Zayed Rd,Dubai,7000,Asia/Dubai
+Mumbai Convention Centre,Bandra Kurla Complex,Mumbai,3500,Asia/Kolkata
+Cape Town Waterfront Hall,19 Dock Rd,Cape Town,2800,Africa/Johannesburg
+Sao Paulo Music Hall,Av. Paulista 900,Sao Paulo,5200,America/Sao_Paulo
+Auckland Harbour Theatre,1 Quay St,Auckland,1800,Pacific/Auckland
+Uber Arena,Uber Platz 1,Berlin,17000,Europe/Berlin

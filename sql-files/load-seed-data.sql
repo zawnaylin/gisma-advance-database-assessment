@@ -1,7 +1,7 @@
 -- Load synthetic demo data from data/*.csv into the schema in create-tables.sql.
 --
 -- Run from the repository root:
---   psql -d <your_database> -f data/load-seed-data.sql
+--   psql -d <your_database> -f sql-files/load-seed-data.sql
 --
 -- Safe by construction:
 --   * ON_ERROR_STOP aborts the whole script on the first error instead of limping on.
@@ -17,9 +17,22 @@
 BEGIN;
 
 -- ---------------------------------------------------------------------------
--- Staging tables: unconstrained, natural-key columns only, dropped with the
--- transaction (TEMP + no COMMIT-crossing needed since it's all one script).
+-- Staging tables: unconstrained, natural-key columns only.
+--
+-- TEMP tables live for the whole *session*, not the transaction, and sit in a
+-- per-session pg_temp_N schema (so they don't show up under "public" in a DB
+-- browser). Re-running this script on the same connection -- e.g. an IDE
+-- console -- would otherwise hit "relation staging_users already exists", so
+-- clear out any leftovers first. pg_temp. pins the drop to temp tables only;
+-- client_min_messages just silences the "does not exist, skipping" notices
+-- on a fresh session.
 -- ---------------------------------------------------------------------------
+SET LOCAL client_min_messages = warning;
+DROP TABLE IF EXISTS pg_temp.staging_users, pg_temp.staging_venues,
+    pg_temp.staging_seats, pg_temp.staging_events, pg_temp.staging_event_seats,
+    pg_temp.staging_bookings, pg_temp.staging_booking_seats, pg_temp.staging_payments;
+RESET client_min_messages;
+
 CREATE TEMP TABLE staging_users (
     name VARCHAR(100), email VARCHAR(255), role VARCHAR(20)
 );

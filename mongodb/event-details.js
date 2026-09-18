@@ -16,50 +16,18 @@
 // =============================================================================
 // createCollection, with schema validation
 // =============================================================================
-db.createCollection("event_details", {
-    validator: {
-        $jsonSchema: {
-            bsonType: "object",
-            required: ["sql_event_id", "title", "category", "attributes", "created_at", "updated_at"],
-            properties: {
-                sql_event_id: {
-                    bsonType: "int",
-                    description: "references Postgres events.event_id -- app-maintained, not a real FK"
-                },
-                title: { bsonType: "string" },
-                category: {
-                    enum: ["concert", "conference", "sports", "theatre"],
-                    description: "closed set, unlike attributes below"
-                },
-                description: { bsonType: "string" },
-                tags: {
-                    bsonType: "array",
-                    items: { bsonType: "string" }
-                },
-                // Deliberately NOT shaped beyond "must be an object" -- this is
-                // the field the whole collection exists for. Validating its
-                // inner fields here would just recreate the rigid-schema
-                // problem one level down.
-                attributes: {
-                    bsonType: "object",
-                    description: "varies by category: artist (concert), speakers (conference), teams (sports), ..."
-                },
-                media: {
-                    bsonType: "object",
-                    properties: {
-                        poster_url: { bsonType: "string" },
-                        gallery: {
-                            bsonType: "array",
-                            items: { bsonType: "string" }
-                        }
-                    }
-                },
-                created_at: { bsonType: "date" },
-                updated_at: { bsonType: "date" }
-            }
-        }
-    }
-});
+// The $jsonSchema lives in mongodb/event-details.schema.json, shared with
+// scripts/sync-event-details.ts so the two can't drift apart. Note that
+// `attributes` is deliberately NOT shaped beyond "must be an object" -- this
+// is the field the whole collection exists for. Validating its inner fields
+// would just recreate the rigid-schema problem one level down.
+//
+// Skipped if the collection already exists (e.g. the sync script created it).
+const eventDetailsSchema = JSON.parse(require("fs").readFileSync("mongodb/event-details.schema.json", "utf8"));
+
+if (!db.getCollectionNames().includes("event_details")) {
+    db.createCollection("event_details", { validator: { $jsonSchema: eventDetailsSchema } });
+}
 
 // One event has at most one details document -- mirrors the EVENTS ||--o|
 // EVENT_DETAILS cardinality in the ERD, and is the closest thing to that
@@ -72,7 +40,22 @@ db.event_details.createIndex({ tags: 1 });
 // =============================================================================
 // CREATE
 // =============================================================================
-db.event_details.insertOne({
+
+// Meant to be run against an EMPTY collection. If scripts/sync-event-details.ts
+// has already seeded it, sql_event_id 1 exists and the unique index rejects
+// the insert (E11000) -- warn and carry on rather than aborting, so the rest
+// of the walkthrough still runs against the existing document. Any other
+// error is real and still stops the script.
+function insertDemoDoc(doc) {
+    try {
+        db.event_details.insertOne(doc);
+    } catch (e) {
+        if (e.code !== 11000) throw e;
+        print(`warning: event_details already has sql_event_id ${doc.sql_event_id} -- skipped inserting "${doc.title}" (run on an empty collection to see this step)`);
+    }
+}
+
+insertDemoDoc({
     sql_event_id: 1, // Waterfront Arena / Autumn Jazz Night, per the Postgres seed data
     title: "Autumn Jazz Night",
     category: "concert",
@@ -93,7 +76,7 @@ db.event_details.insertOne({
 
 // A different category, a completely different attributes shape -- same
 // collection, same validator, no schema migration needed to add this.
-db.event_details.insertOne({
+insertDemoDoc({
     sql_event_id: 12,
     title: "Data Systems Summit",
     category: "conference",
@@ -161,7 +144,10 @@ db.event_details.updateOne(
 // =============================================================================
 // DELETE
 // =============================================================================
-db.event_details.deleteOne({ sql_event_id: 12 });
+// Matched on title as well as sql_event_id: on a seeded collection, id 12 is
+// a real event's details document, and the demo insert above was skipped --
+// this should only ever remove the demo's own document, never seeded data.
+db.event_details.deleteOne({ sql_event_id: 12, title: "Data Systems Summit" });
 
 // =============================================================================
 // AGGREGATION 1 -- normalize the category-specific "headline" field
@@ -169,26 +155,62 @@ db.event_details.deleteOne({ sql_event_id: 12 });
 // The whole point of `attributes` is that it varies by category -- but a
 // UI listing page usually wants ONE consistent "what's the highlight"
 // field regardless of category. $switch pulls that out at query time
-// instead of needing three different UI branches (or three different
-// relational tables) to read it back.
+// instead of needing a UI branch (or a relational table) per category.
+//
+// And the shape varies WITHIN a category too: a concert can be one artist,
+// a festival lineup or an orchestra. So each branch is an $ifNull chain --
+// the first of these fields the document actually has wins, and a missing
+// field (or $arrayElemAt on a missing array) just falls through to the next.
+const firstOf = (arrayPath) => ({ $arrayElemAt: [arrayPath, 0] });
+
 db.event_details.aggregate([
     {
         $project: {
             _id: 0,
+            sql_event_id: 1,
             title: 1,
             category: 1,
             highlight: {
                 $switch: {
                     branches: [
-                        { case: { $eq: ["$category", "concert"] }, then: "$attributes.artist" },
-                        { case: { $eq: ["$category", "conference"] }, then: { $arrayElemAt: ["$attributes.speakers", 0] } },
+                        {
+                            // single act -> festival headliner -> orchestra/ensemble
+                            case: { $eq: ["$category", "concert"] },
+                            then: {
+                                $ifNull: ["$attributes.artist", firstOf("$attributes.lineup"),
+                                    "$attributes.ensemble", null]
+                            }
+                        },
+                        {
+                            // opera composer -> playwright -> lead cast member. An opera's
+                            // cast is [{ role, performer }], a play's is plain names, so
+                            // take .performer if the first entry has one, else the entry.
+                            case: { $eq: ["$category", "theatre"] },
+                            then: {
+                                $ifNull: ["$attributes.composer", "$attributes.playwright",
+                                    {
+                                        $let: {
+                                            vars: { lead: firstOf("$attributes.cast") },
+                                            in: { $ifNull: ["$$lead.performer", "$$lead"] }
+                                        }
+                                    },
+                                    null]
+                            }
+                        },
+                        {
+                            // first-billed comic -> host
+                            case: { $eq: ["$category", "comedy"] },
+                            then: { $ifNull: [firstOf("$attributes.performers"), "$attributes.host", null] }
+                        },
+                        { case: { $eq: ["$category", "conference"] }, then: firstOf("$attributes.speakers") },
                         { case: { $eq: ["$category", "sports"] }, then: "$attributes.teams" }
                     ],
                     default: null
                 }
             }
         }
-    }
+    },
+    { $sort: { sql_event_id: 1 } }
 ]);
 
 // =============================================================================

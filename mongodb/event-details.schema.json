@@ -1,0 +1,36 @@
+{
+  "bsonType": "object",
+  "required": ["sql_event_id", "title", "category", "attributes", "created_at", "updated_at"],
+  "properties": {
+    "sql_event_id": {
+      "bsonType": "int",
+      "description": "references Postgres events.event_id -- app-maintained, not a real FK"
+    },
+    "title": { "bsonType": "string" },
+    "category": {
+      "enum": ["concert", "conference", "sports", "theatre", "comedy"],
+      "description": "closed set, unlike attributes below"
+    },
+    "description": { "bsonType": "string" },
+    "tags": {
+      "bsonType": "array",
+      "items": { "bsonType": "string" }
+    },
+    "attributes": {
+      "bsonType": "object",
+      "description": "varies by category: artist (concert), speakers (conference), teams (sports), ..."
+    },
+    "media": {
+      "bsonType": "object",
+      "properties": {
+        "poster_url": { "bsonType": "string" },
+        "gallery": {
+          "bsonType": "array",
+          "items": { "bsonType": "string" }
+        }
+      }
+    },
+    "created_at": { "bsonType": "date" },
+    "updated_at": { "bsonType": "date" }
+  }
+}

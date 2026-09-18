@@ -1,9 +1,11 @@
 -- Sample CRUD operations against the schema in create-tables.sql.
 --
--- Written to run, top to bottom, against a database that already has:
---   psql -d your_database -f create-tables.sql
---   psql -d your_database -f create-indexes.sql
---   psql -d your_database -f data/load-seed-data.sql
+-- Written to run, top to bottom, against a database that already has
+-- (run from the repository root):
+--   psql -d your_database -f sql-files/create-tables.sql
+--   psql -d your_database -f sql-files/create-indexes.sql
+--   psql -d your_database -f sql-files/load-seed-data.sql
+--   psql -d your_database -f sql-files/functions-and-procedures.sql  -- for expire_stale_holds() (UPDATE #3)
 --
 -- Every example resolves rows by business key (email, venue/event name,
 -- booking_reference) rather than a hard-coded surrogate ID -- those IDs
@@ -174,10 +176,14 @@ WHERE es.event_seat_id = bs.event_seat_id
   AND bk.booking_reference = 'BK-0002';
 
 -- 3. Release any hold that's expired -- the maintenance job held_until exists
--- for. Runs safely on a schedule; matches nothing once holds are current.
-UPDATE event_seats
-SET status = 'available', held_until = NULL, version = version + 1
-WHERE status = 'held' AND held_until < now();
+-- for. Runs safely on a schedule; does nothing while holds are current.
+-- A procedure rather than a bare UPDATE on event_seats: freeing the seat
+-- alone would leave its pending booking's booking_seats claim active, and
+-- uq_booking_seats_active_event_seat would then block anyone from booking
+-- it. expire_stale_holds() expires the booking and releases the claim too
+-- (see functions-and-procedures.sql). Seeded pending bookings carry a
+-- 15-minute hold, so run this 15+ minutes after seeding and it expires them.
+CALL expire_stale_holds();
 
 -- 4. Record a successful payment for Priya's now-confirmed booking.
 INSERT INTO payments (booking_id, amount, payment_method, status, paid_at)

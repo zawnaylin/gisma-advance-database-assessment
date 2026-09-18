@@ -1,0 +1,746 @@
+[
+  {
+    "venue_name": "Waterfront Arena",
+    "event_title": "Autumn Jazz Night",
+    "category": "concert",
+    "description": "An intimate evening of modern jazz standards.",
+    "tags": ["jazz", "live-band", "evening"],
+    "attributes": {
+      "artist": "The Harbor Quartet",
+      "support_act": "Nora Lindqvist Trio",
+      "genre": "jazz"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/autumn-jazz-night.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Waterfront Arena",
+    "event_title": "Electro Pulse Festival",
+    "category": "concert",
+    "description": "An all-night electronic festival across two stages.",
+    "tags": ["electronic", "festival", "late-night"],
+    "attributes": {
+      "lineup": ["Kira Vogt", "Pulse Theory", "DJ Marlow"],
+      "stages": 2,
+      "genre": "electronic",
+      "age_restriction": 18
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/electro-pulse-festival.jpg",
+      "gallery": [
+        "https://cdn.example.com/events/epf/main-stage.jpg",
+        "https://cdn.example.com/events/epf/crowd.jpg"
+      ]
+    }
+  },
+  {
+    "venue_name": "Old Town Hall",
+    "event_title": "Chamber Orchestra Evening",
+    "category": "concert",
+    "description": "Baroque and early classical works performed in the candlelit main hall of Munich's Old Town Hall.",
+    "tags": ["classical", "orchestra", "baroque"],
+    "attributes": {
+      "ensemble": "Isar Chamber Orchestra",
+      "conductor": "Margarethe Holm",
+      "soloist": "Felix Brandauer (violin)",
+      "program": [
+        { "composer": "Antonio Vivaldi", "work": "The Four Seasons" },
+        { "composer": "Johann Sebastian Bach", "work": "Brandenburg Concerto No. 3" },
+        { "composer": "Joseph Haydn", "work": "Symphony No. 49 \"La Passione\"" }
+      ],
+      "genre": "classical"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/chamber-orchestra-evening.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Riverside Theatre",
+    "event_title": "Shakespeare Revisited",
+    "category": "theatre",
+    "description": "A modern-dress staging of scenes from Shakespeare's best-known plays.",
+    "tags": ["theatre", "drama", "classic"],
+    "attributes": {
+      "playwright": "William Shakespeare",
+      "director": "Helen Marsh",
+      "cast": ["Tom Reyes", "Amelia Stone", "Julian Park"],
+      "runtime_minutes": 150,
+      "intermission": true
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/shakespeare-revisited.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Riverside Theatre",
+    "event_title": "Comedy Gala",
+    "category": "comedy",
+    "description": "Five of the London circuit's sharpest stand-ups in one night, hosted on the Thames.",
+    "tags": ["stand-up", "comedy", "gala"],
+    "attributes": {
+      "host": "Priya Wexford",
+      "performers": ["Danny Cole", "Maeve Ashworth", "Sol Okafor", "Rhys Penhale", "Lina Marsh"],
+      "runtime_minutes": 120,
+      "age_restriction": 16,
+      "content_advisory": "strong language"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/comedy-gala.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Liberty Pavilion",
+    "event_title": "Broadway Night",
+    "category": "theatre",
+    "description": "A revue of show-stopping numbers from classic and contemporary Broadway musicals.",
+    "tags": ["musical", "broadway", "revue"],
+    "attributes": {
+      "show_type": "musical revue",
+      "director": "Marcus Bell",
+      "musical_director": "Joanna Reyes",
+      "cast": ["Tessa Monroe", "Andre Liu", "Carla Mendes", "Ben Hartley"],
+      "runtime_minutes": 140,
+      "intermission": true
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/broadway-night.jpg",
+      "gallery": ["https://cdn.example.com/events/broadway-night/finale.jpg"]
+    }
+  },
+  {
+    "venue_name": "Liberty Pavilion",
+    "event_title": "Indie Rock Showcase",
+    "category": "concert",
+    "description": "Four rising New York indie bands, one stage, no filler.",
+    "tags": ["indie", "rock", "showcase"],
+    "attributes": {
+      "lineup": ["The Paper Lanterns", "Static Harbor", "June Avenue", "Low Tide Club"],
+      "stages": 1,
+      "genre": "indie rock",
+      "age_restriction": 18
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/indie-rock-showcase.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Sunset Bowl",
+    "event_title": "Summer Sunset Sessions",
+    "category": "concert",
+    "description": "Laid-back soul and acoustic sets timed to the sunset over the Hollywood Hills.",
+    "tags": ["acoustic", "soul", "open-air"],
+    "attributes": {
+      "artist": "Lena Cruz",
+      "support_act": "The Canyon Collective",
+      "genre": "soul"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/summer-sunset-sessions.jpg",
+      "gallery": ["https://cdn.example.com/events/summer-sunset-sessions/bowl.jpg"]
+    }
+  },
+  {
+    "venue_name": "Tokyo Grand Hall",
+    "event_title": "Samba Sunset Festival",
+    "category": "concert",
+    "description": "A Rio-style samba festival brought to Tokyo, with batucada drummers and a full dance troupe.",
+    "tags": ["samba", "festival", "latin", "dance"],
+    "attributes": {
+      "lineup": ["Bateria Estrela", "Marisa Duarte", "Os Tamborins"],
+      "stages": 1,
+      "genre": "samba"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/samba-sunset-festival.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Tokyo Grand Hall",
+    "event_title": "Mumbai Unplugged",
+    "category": "concert",
+    "description": "Stripped-back acoustic arrangements of Hindi indie and film songs.",
+    "tags": ["acoustic", "indian", "unplugged"],
+    "attributes": {
+      "artist": "Aarav Menon",
+      "support_act": "Sitara Duo",
+      "genre": "indian acoustic"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/mumbai-unplugged.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Tokyo Grand Hall",
+    "event_title": "Jazz sous les Etoiles",
+    "category": "concert",
+    "description": "French manouche and cool jazz under a starlit ceiling installation.",
+    "tags": ["jazz", "french", "gypsy-jazz"],
+    "attributes": {
+      "artist": "Quintette Lumiere",
+      "genre": "gypsy jazz"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/jazz-sous-les-etoiles.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Tokyo Grand Hall",
+    "event_title": "Cape Sunset Serenade",
+    "category": "concert",
+    "description": "South African choral and Afro-folk songs from a touring Cape Town ensemble.",
+    "tags": ["choral", "afro-folk", "world-music"],
+    "attributes": {
+      "artist": "Umoya Voices",
+      "support_act": "Thandi Mokoena",
+      "genre": "afro-folk"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/cape-sunset-serenade.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Paris Opera Court",
+    "event_title": "Harbourfront Big Band",
+    "category": "concert",
+    "description": "An 18-piece big band playing swing-era classics and new arrangements.",
+    "tags": ["big-band", "swing", "jazz"],
+    "attributes": {
+      "artist": "Harbourfront Big Band",
+      "bandleader": "Oliver Grant",
+      "members": 18,
+      "genre": "swing"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/harbourfront-big-band.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Paris Opera Court",
+    "event_title": "Parisian Cabaret Night",
+    "category": "theatre",
+    "description": "Chanson, burlesque and variety acts in the spirit of the Belle Epoque cabarets.",
+    "tags": ["cabaret", "chanson", "variety"],
+    "attributes": {
+      "show_type": "cabaret",
+      "director": "Camille Arnaud",
+      "cast": ["Josephine Laurent", "Remy Duval", "Les Soeurs Ciel"],
+      "runtime_minutes": 110,
+      "intermission": true,
+      "age_restriction": 16
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/parisian-cabaret-night.jpg",
+      "gallery": ["https://cdn.example.com/events/parisian-cabaret-night/stage.jpg"]
+    }
+  },
+  {
+    "venue_name": "Paris Opera Court",
+    "event_title": "Southern Skies Concert",
+    "category": "concert",
+    "description": "Film-score-inspired orchestral pieces celebrating the landscapes of the southern hemisphere.",
+    "tags": ["orchestra", "film-music", "classical"],
+    "attributes": {
+      "ensemble": "Orchestre de la Cour",
+      "conductor": "Etienne Morel",
+      "program": [
+        { "composer": "Ana Ferreira", "work": "Patagonia Suite" },
+        { "composer": "Liam Te Rangi", "work": "Aotearoa Overture" }
+      ],
+      "genre": "orchestral"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/southern-skies-concert.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Paris Opera Court",
+    "event_title": "Bossa Nova Night",
+    "category": "concert",
+    "description": "Soft Brazilian bossa nova standards performed by a guitar-and-voice trio.",
+    "tags": ["bossa-nova", "brazilian", "acoustic"],
+    "attributes": {
+      "artist": "Trio Ipanema",
+      "genre": "bossa nova"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/bossa-nova-night.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Toronto Ice Dome",
+    "event_title": "La Boheme Revival",
+    "category": "theatre",
+    "description": "A new staging of Puccini's opera about young artists in Paris.",
+    "tags": ["opera", "puccini", "classic"],
+    "attributes": {
+      "show_type": "opera",
+      "composer": "Giacomo Puccini",
+      "conductor": "Sofia Kowalczyk",
+      "director": "Daniel Okonkwo",
+      "cast": [
+        { "role": "Mimi", "performer": "Elena Varga" },
+        { "role": "Rodolfo", "performer": "Marco Bellini" },
+        { "role": "Musetta", "performer": "Hannah Cho" }
+      ],
+      "language": "Italian",
+      "surtitles": "English",
+      "runtime_minutes": 165,
+      "intermission": true
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/la-boheme-revival.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Toronto Ice Dome",
+    "event_title": "Arabian Nights Gala",
+    "category": "theatre",
+    "description": "A dance and aerial spectacle inspired by the One Thousand and One Nights.",
+    "tags": ["dance", "spectacle", "gala"],
+    "attributes": {
+      "show_type": "dance spectacle",
+      "director": "Yasmin Haddad",
+      "choreographer": "Karim Nasser",
+      "cast": ["Layla Aziz", "Omar Rahimi", "The Sahara Aerial Troupe"],
+      "runtime_minutes": 130,
+      "intermission": true
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/arabian-nights-gala.jpg",
+      "gallery": ["https://cdn.example.com/events/arabian-nights-gala/aerial.jpg"]
+    }
+  },
+  {
+    "venue_name": "Toronto Ice Dome",
+    "event_title": "Neon Nights Concert",
+    "category": "concert",
+    "description": "Synth-pop and retro-wave with a full laser and light show.",
+    "tags": ["synth-pop", "retro-wave", "light-show"],
+    "attributes": {
+      "artist": "Neon Arcade",
+      "support_act": "VHS Hearts",
+      "genre": "synth-pop"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/neon-nights-concert.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Toronto Ice Dome",
+    "event_title": "Waterfront Soul Night",
+    "category": "concert",
+    "description": "Classic Motown and modern soul from a ten-piece band with horns.",
+    "tags": ["soul", "motown", "live-band"],
+    "attributes": {
+      "artist": "The Bay Street Revue",
+      "genre": "soul"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/waterfront-soul-night.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Dubai Pearl Arena",
+    "event_title": "Golden Sands Symphony",
+    "category": "concert",
+    "description": "A symphonic program blending Western orchestra with Arabic maqam instruments.",
+    "tags": ["orchestra", "fusion", "classical"],
+    "attributes": {
+      "ensemble": "Gulf Philharmonic",
+      "conductor": "Nadia Al-Mansoori",
+      "soloist": "Tariq Saleh (oud)",
+      "program": [
+        { "composer": "Nikolai Rimsky-Korsakov", "work": "Scheherazade" },
+        { "composer": "Rami Khalil", "work": "Desert Winds (premiere)" }
+      ],
+      "genre": "classical"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/golden-sands-symphony.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Dubai Pearl Arena",
+    "event_title": "Table Mountain Sessions",
+    "category": "concert",
+    "description": "Folk and Afro-acoustic songwriters from the Western Cape, in the round.",
+    "tags": ["folk", "acoustic", "singer-songwriter"],
+    "attributes": {
+      "lineup": ["Pieter van Wyk", "Nomsa Dlamini", "The Kloof Band"],
+      "stages": 1,
+      "genre": "folk"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/table-mountain-sessions.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Dubai Pearl Arena",
+    "event_title": "Bollywood Beats Live",
+    "category": "concert",
+    "description": "Big Bollywood hits with a live band and dancers.",
+    "tags": ["bollywood", "dance", "pop"],
+    "attributes": {
+      "artist": "Rhea Kapoor & The Filmi Orchestra",
+      "support_act": "DJ Arjun",
+      "genre": "bollywood"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/bollywood-beats-live.jpg",
+      "gallery": ["https://cdn.example.com/events/bollywood-beats-live/dancers.jpg"]
+    }
+  },
+  {
+    "venue_name": "Dubai Pearl Arena",
+    "event_title": "Carnival Warmup Show",
+    "category": "concert",
+    "description": "Soca, samba and steelpan to get the crowd ready for carnival season.",
+    "tags": ["carnival", "soca", "steelpan", "festival"],
+    "attributes": {
+      "lineup": ["Island Steel Orchestra", "Kaiso Kings", "Bateria Estrela"],
+      "stages": 1,
+      "genre": "soca"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/carnival-warmup-show.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Mumbai Convention Centre",
+    "event_title": "Maple Leaf Comedy Night",
+    "category": "comedy",
+    "description": "Canadian stand-up comics on their first tour of India.",
+    "tags": ["stand-up", "comedy", "touring"],
+    "attributes": {
+      "host": "Vikram Rao",
+      "performers": ["Jess MacLeod", "Andre Tremblay", "Kai Nakamura-Singh"],
+      "runtime_minutes": 105,
+      "age_restriction": 16,
+      "content_advisory": "mild language"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/maple-leaf-comedy-night.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Mumbai Convention Centre",
+    "event_title": "African Jazz Revival",
+    "category": "concert",
+    "description": "Ethio-jazz and township jazz grooves from a Johannesburg-Addis Ababa collective.",
+    "tags": ["jazz", "ethio-jazz", "world-music"],
+    "attributes": {
+      "artist": "Addis-Joburg Jazz Collective",
+      "genre": "ethio-jazz"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/african-jazz-revival.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Mumbai Convention Centre",
+    "event_title": "Auckland Indie Fest",
+    "category": "concert",
+    "description": "A touring showcase of New Zealand's indie scene.",
+    "tags": ["indie", "festival", "new-zealand"],
+    "attributes": {
+      "lineup": ["Harbour Lights", "Moa Street", "Kiri & The Tides"],
+      "stages": 1,
+      "genre": "indie"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/auckland-indie-fest.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Mumbai Convention Centre",
+    "event_title": "Harbourside Acoustic Set",
+    "category": "concert",
+    "description": "An unplugged evening of original songs from a guitar-and-cello duo.",
+    "tags": ["acoustic", "singer-songwriter", "intimate"],
+    "attributes": {
+      "artist": "Ishaan & Clara",
+      "genre": "acoustic"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/harbourside-acoustic-set.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Cape Town Waterfront Hall",
+    "event_title": "Pacific Rim Showcase",
+    "category": "concert",
+    "description": "Artists from around the Pacific, from K-indie to Polynesian roots music.",
+    "tags": ["world-music", "showcase", "pacific"],
+    "attributes": {
+      "lineup": ["Seoul Drift", "Tane Mahuta Roots", "Manila Bloom"],
+      "stages": 1,
+      "genre": "world"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/pacific-rim-showcase.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Cape Town Waterfront Hall",
+    "event_title": "Monsoon Melodies",
+    "category": "concert",
+    "description": "Monsoon ragas reimagined with Indian classical instruments and electronics.",
+    "tags": ["indian-classical", "fusion", "electronic"],
+    "attributes": {
+      "artist": "Megha Rao",
+      "support_act": "Tabla Circuit",
+      "genre": "indian fusion"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/monsoon-melodies.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Cape Town Waterfront Hall",
+    "event_title": "Skyline Jazz Evening",
+    "category": "concert",
+    "description": "Contemporary jazz with views across Table Bay.",
+    "tags": ["jazz", "contemporary", "evening"],
+    "attributes": {
+      "artist": "Sipho Ndlovu Quintet",
+      "genre": "contemporary jazz"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/skyline-jazz-evening.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Cape Town Waterfront Hall",
+    "event_title": "Sakura Symphony",
+    "category": "concert",
+    "description": "An orchestral program of Japanese composers, framed by cherry-blossom projections.",
+    "tags": ["orchestra", "japanese", "classical"],
+    "attributes": {
+      "ensemble": "Cape Philharmonia",
+      "conductor": "Haruka Mori",
+      "program": [
+        { "composer": "Toru Takemitsu", "work": "Requiem for Strings" },
+        { "composer": "Akira Ifukube", "work": "Japanese Rhapsody" }
+      ],
+      "genre": "classical"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/sakura-symphony.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Sao Paulo Music Hall",
+    "event_title": "Winter Rock Festival",
+    "category": "concert",
+    "description": "Hard rock and alternative bands across two stages for Sao Paulo's winter.",
+    "tags": ["rock", "alternative", "festival"],
+    "attributes": {
+      "lineup": ["Ferro Velho", "The Southern Static", "Cinza", "Rota 66"],
+      "stages": 2,
+      "genre": "rock",
+      "age_restriction": 16
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/winter-rock-festival.jpg",
+      "gallery": ["https://cdn.example.com/events/winter-rock-festival/pit.jpg"]
+    }
+  },
+  {
+    "venue_name": "Sao Paulo Music Hall",
+    "event_title": "Classical Ragas Night",
+    "category": "concert",
+    "description": "A traditional Hindustani classical recital: evening ragas on sitar and tabla.",
+    "tags": ["indian-classical", "sitar", "raga"],
+    "attributes": {
+      "artist": "Pandit Raghav Joshi",
+      "accompanist": "Anil Dutta (tabla)",
+      "ragas": ["Yaman", "Bageshri", "Darbari Kanada"],
+      "genre": "hindustani classical"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/classical-ragas-night.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Sao Paulo Music Hall",
+    "event_title": "Paulista Jazz Collective",
+    "category": "concert",
+    "description": "Sao Paulo's own jazz collective mixing samba-jazz and hard bop.",
+    "tags": ["jazz", "samba-jazz", "brazilian"],
+    "attributes": {
+      "artist": "Paulista Jazz Collective",
+      "genre": "samba-jazz"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/paulista-jazz-collective.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Sao Paulo Music Hall",
+    "event_title": "Northern Lights Acoustic",
+    "category": "concert",
+    "description": "Nordic folk and ambient acoustic songs from a Norwegian trio.",
+    "tags": ["nordic", "folk", "acoustic"],
+    "attributes": {
+      "artist": "Nordlys Trio",
+      "genre": "nordic folk"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/northern-lights-acoustic.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Auckland Harbour Theatre",
+    "event_title": "Midnight Piano Sessions",
+    "category": "concert",
+    "description": "Solo piano, from neo-classical to jazz improvisation, in a dimly lit hall.",
+    "tags": ["piano", "neo-classical", "solo"],
+    "attributes": {
+      "artist": "Mara Whitfield",
+      "genre": "neo-classical"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/midnight-piano-sessions.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Auckland Harbour Theatre",
+    "event_title": "Desert Beats Festival",
+    "category": "concert",
+    "description": "Desert blues and North African electronic artists in one line-up.",
+    "tags": ["desert-blues", "electronic", "festival"],
+    "attributes": {
+      "lineup": ["Tuareg Echoes", "Sahel Sound System", "Amira Benali"],
+      "stages": 1,
+      "genre": "desert blues",
+      "age_restriction": 18
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/desert-beats-festival.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Auckland Harbour Theatre",
+    "event_title": "Anime Live Orchestra",
+    "category": "concert",
+    "description": "Iconic anime soundtracks performed live to projected scenes.",
+    "tags": ["orchestra", "anime", "film-music"],
+    "attributes": {
+      "ensemble": "Harbour City Symphony",
+      "conductor": "Kenji Watanabe",
+      "program": [
+        { "composer": "Yuki Harada", "work": "Skyward Suite" },
+        { "composer": "Mei Tanaka", "work": "Spirit Garden Medley" }
+      ],
+      "genre": "film music"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/anime-live-orchestra.jpg",
+      "gallery": ["https://cdn.example.com/events/anime-live-orchestra/screen.jpg"]
+    }
+  },
+  {
+    "venue_name": "Auckland Harbour Theatre",
+    "event_title": "Chamber Strings Evening",
+    "category": "concert",
+    "description": "String quartets from Haydn to the present day.",
+    "tags": ["classical", "string-quartet", "chamber"],
+    "attributes": {
+      "ensemble": "Waitemata String Quartet",
+      "program": [
+        { "composer": "Joseph Haydn", "work": "String Quartet Op. 76 No. 3 \"Emperor\"" },
+        { "composer": "Claude Debussy", "work": "String Quartet in G minor" }
+      ],
+      "genre": "classical"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/chamber-strings-evening.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Uber Arena",
+    "event_title": "Winter Lights Festival",
+    "category": "concert",
+    "description": "A winter pop festival with a light installation filling the arena.",
+    "tags": ["pop", "festival", "light-show", "winter"],
+    "attributes": {
+      "lineup": ["Aurora Vale", "The Snowline", "Mika Fjord", "Glasshouse"],
+      "stages": 2,
+      "genre": "pop"
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/winter-lights-festival.jpg",
+      "gallery": [
+        "https://cdn.example.com/events/winter-lights-festival/installation.jpg",
+        "https://cdn.example.com/events/winter-lights-festival/crowd.jpg"
+      ]
+    }
+  },
+  {
+    "venue_name": "Uber Arena",
+    "event_title": "Berlin Beats Arena Night",
+    "category": "concert",
+    "description": "Berlin techno taken from the club to the arena, with a DJ set lasting all night.",
+    "tags": ["techno", "electronic", "late-night"],
+    "attributes": {
+      "lineup": ["Kai Brandt", "Spree Youth", "Ostkreuz Collective"],
+      "stages": 1,
+      "genre": "techno",
+      "age_restriction": 18
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/berlin-beats-arena-night.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "venue_name": "Uber Arena",
+    "event_title": "New Year Countdown Concert",
+    "category": "concert",
+    "description": "Ring in the new year with a headline set, confetti and a live countdown.",
+    "tags": ["new-year", "pop", "countdown", "celebration"],
+    "attributes": {
+      "artist": "Stella Kramer",
+      "support_act": "The Midnight Hour",
+      "genre": "pop",
+      "countdown": true
+    },
+    "media": {
+      "poster_url": "https://cdn.example.com/events/new-year-countdown-concert.jpg",
+      "gallery": []
+    }
+  }
+]

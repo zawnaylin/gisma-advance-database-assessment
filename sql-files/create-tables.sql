@@ -87,23 +87,23 @@ CREATE SEQUENCE booking_reference_seq;
 
 CREATE TABLE bookings
 (
-    booking_id         INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    user_id            INTEGER                  NOT NULL,
-    event_id           INTEGER                  NOT NULL,
-    status             VARCHAR(20)              NOT NULL DEFAULT 'pending',
-    total_amount       NUMERIC(10, 2)           NOT NULL DEFAULT 0,
+    booking_id        INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    user_id           INTEGER                  NOT NULL,
+    event_id          INTEGER                  NOT NULL,
+    status            VARCHAR(20)              NOT NULL DEFAULT 'pending',
+    total_amount      NUMERIC(10, 2)           NOT NULL DEFAULT 0,
     -- Customer-facing confirmation code. Auto-generated for app-created bookings;
     --     -- migrated rows supply their real historic code explicitly, overriding the default.
-    booking_reference VARCHAR(20) NOT NULL
-        DEFAULT ('BKE-' || lpad(nextval('booking_reference_seq')::text, 6, '0')),
+    booking_reference VARCHAR(20)              NOT NULL
+                                                        DEFAULT ('BKE-' || lpad(nextval('booking_reference_seq')::text, 6, '0')),
     -- Pointer back to the source system's own identifier for a migrated row.
     -- Always NULL for bookings created directly in the app -- that's its
     -- permanent, correct state, not a gap to be filled in later.
-    legacy_source_ref  VARCHAR(64),
-    created_at         TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    confirmed_at       TIMESTAMP WITH TIME ZONE,
-    cancelled_at       TIMESTAMP WITH TIME ZONE,
-    updated_at         TIMESTAMP WITH TIME ZONE,
+    legacy_source_ref VARCHAR(64),
+    created_at        TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    confirmed_at      TIMESTAMP WITH TIME ZONE,
+    cancelled_at      TIMESTAMP WITH TIME ZONE,
+    updated_at        TIMESTAMP WITH TIME ZONE,
     CONSTRAINT fk_bookings_user FOREIGN KEY (user_id) REFERENCES user_profiles (user_id) ON DELETE RESTRICT,
     CONSTRAINT fk_bookings_event FOREIGN KEY (event_id) REFERENCES events (event_id) ON DELETE RESTRICT,
     CONSTRAINT uq_bookings_reference UNIQUE (booking_reference),

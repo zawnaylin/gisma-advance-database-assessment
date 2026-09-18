@@ -1,0 +1,22 @@
+{
+  "name": "advance-database-assessment",
+  "private": true,
+  "description": "Tooling for seeding MongoDB event_details from the Postgres event booking schema",
+  "type": "module",
+  "scripts": {
+    "sync:event-details": "node scripts/sync-event-details.ts",
+    "typecheck": "tsc"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=23.6.0"
+  },
+  "dependencies": {
+    "mongodb": "^7.6.0",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  }
+}

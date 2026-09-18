@@ -1,0 +1,4 @@
+# Seed CSVs are read by psql's \copy in CSV mode, which rejects a file whose
+# rows end in a MIX of LF and CRLF ("unquoted carriage return found in
+# data"). Always check them out with LF, whatever core.autocrlf is set to.
+*.csv text eol=lf

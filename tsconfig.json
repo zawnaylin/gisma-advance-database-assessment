@@ -1,0 +1,18 @@
+{
+  // Type-checking only (`npm run typecheck`) -- Node runs the .ts files
+  // directly via built-in type stripping, so nothing is ever emitted.
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    // Node's type stripping can only erase types, not transform code:
+    // reject enums, namespaces and parameter properties at check time.
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  },
+  "include": ["scripts/**/*.ts"]
+}
